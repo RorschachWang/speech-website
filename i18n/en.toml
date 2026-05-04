@@ -50,6 +50,9 @@ docs = "Docs"
 privacy_policy = "Privacy Policy"
 license = "License"
 notice = "Notice"
+contact = "Contact"
+refund = "Refund Policy"
+support_kofi = "Support on Ko-fi"
 
 copyright = "&copy; 2026 OFFTYPE. All rights reserved."
 

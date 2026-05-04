@@ -50,6 +50,9 @@ docs = "使用指南"
 privacy_policy = "隐私政策"
 license = "许可证"
 notice = "声明"
+contact = "联系我们"
+refund = "退款政策"
+support_kofi = "在 Ko-fi 上支持"
 
 copyright = "&copy; 2026 OFFTYPE. 保留所有权利。"
 
