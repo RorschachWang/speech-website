@@ -336,6 +336,10 @@ body = "We offer a **7-day money-back guarantee** on all paid purchases of OFFTY
 [refund.section2]
 title = "2. How to Request a Refund"
 body = "Send an email to [refund@offtype.app](mailto:refund@offtype.app) with:"
+item1 = "The email address used at purchase"
+item2 = "Your order or receipt number (if available)"
+item3 = "A brief reason (optional — helps us improve)"
+outro = "We will process your refund within **3 business days** of receiving your request. Refunds are issued to the original payment method."
 
 [refund.section3]
 title = "3. Exceptions"
@@ -350,10 +354,6 @@ body = "If you experience any issue with OFFTYPE, please contact us before filin
 [refund.section5]
 title = "5. Free Downloads"
 body = "OFFTYPE's base application is free to download and use. This refund policy applies only to optional paid purchases (e.g. Pro features, voluntary support contributions). Free users are not entitled to a refund because nothing was paid."
-
-[refund.section6]
-title = "6. Voluntary Contributions"
-body = "If you supported OFFTYPE via a \"pay what you want\" or donation contribution, the same 7-day refund policy applies. Email us and we will reverse the contribution in full."
 
 [refund.section7]
 title = "7. Contact"
