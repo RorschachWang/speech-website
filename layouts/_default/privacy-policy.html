@@ -1,0 +1,66 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">{{ i18n "privacy_policy.hero.eyebrow" }}</p>
+    <h1 class="page-title">{{ i18n "privacy_policy.hero.title" }}</h1>
+    <p class="page-sub">{{ i18n "privacy_policy.hero.subtitle" }}</p>
+    <p class="legal-meta">{{ i18n "privacy_policy.hero.meta" }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container-narrow">
+    <article class="legal-doc">
+
+      <h2 class="heading-2">{{ i18n "privacy_policy.section1.title" }}</h2>
+      <p>{{ i18n "privacy_policy.section1.intro" | markdownify }}</p>
+      <ul class="legal-list">
+        <li>{{ i18n "privacy_policy.section1.item1" }}</li>
+        <li>{{ i18n "privacy_policy.section1.item2" }}</li>
+        <li>{{ i18n "privacy_policy.section1.item3" }}</li>
+        <li>{{ i18n "privacy_policy.section1.item4" }}</li>
+        <li>{{ i18n "privacy_policy.section1.item5" }}</li>
+        <li>{{ i18n "privacy_policy.section1.item6" }}</li>
+        <li>{{ i18n "privacy_policy.section1.item7" }}</li>
+      </ul>
+
+      <h2 class="heading-2">{{ i18n "privacy_policy.section2.title" }}</h2>
+      <p>{{ i18n "privacy_policy.section2.intro" }}</p>
+      <p>{{ i18n "privacy_policy.section2.p1" | markdownify }}</p>
+      <p>{{ i18n "privacy_policy.section2.p2" | markdownify }}</p>
+      <p>{{ i18n "privacy_policy.section2.p3" | markdownify }}</p>
+
+      <h2 class="heading-2">{{ i18n "privacy_policy.section3.title" }}</h2>
+      <p>{{ i18n "privacy_policy.section3.intro" }}</p>
+      <ul class="legal-list">
+        <li>{{ i18n "privacy_policy.section3.item1" | markdownify }}</li>
+        <li>{{ i18n "privacy_policy.section3.item2" | markdownify }}</li>
+        <li>{{ i18n "privacy_policy.section3.item3" | markdownify }}</li>
+      </ul>
+      <p>{{ i18n "privacy_policy.section3.outro" }}</p>
+
+      <h2 class="heading-2">{{ i18n "privacy_policy.section4.title" }}</h2>
+      <p>{{ i18n "privacy_policy.section4.body" }}</p>
+
+      <h2 class="heading-2">{{ i18n "privacy_policy.section5.title" }}</h2>
+      <p>{{ i18n "privacy_policy.section5.p1" | markdownify }}</p>
+      <p>{{ i18n "privacy_policy.section5.p2" | markdownify }}</p>
+
+      <h2 class="heading-2">{{ i18n "privacy_policy.section6.title" }}</h2>
+      <p>{{ i18n "privacy_policy.section6.body" | markdownify }}</p>
+
+      <h2 class="heading-2">{{ i18n "privacy_policy.section7.title" }}</h2>
+      <p>{{ i18n "privacy_policy.section7.body" }}</p>
+
+      <h2 class="heading-2">{{ i18n "privacy_policy.section8.title" }}</h2>
+      <p>{{ i18n "privacy_policy.section8.body" | markdownify }}</p>
+
+      <div class="legal-footer-note">
+        <p>{{ i18n "privacy_policy.disclaimer" | markdownify }}</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+{{ end }}

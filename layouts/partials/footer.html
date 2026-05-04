@@ -1,0 +1,34 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand-col">
+        <img src="{{ "logo/offtype-horizontal-dark.svg" | relURL }}" alt="OFFTYPE" class="footer-logo">
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <p class="footer-col-title">{{ i18n "footer.column.product" }}</p>
+          <a href="{{ "/" | relLangURL }}">{{ i18n "footer.link.home" }}</a>
+          <a href="{{ "/compare/" | relLangURL }}">{{ i18n "footer.link.compare" }}</a>
+          <a href="{{ "/privacy/" | relLangURL }}">{{ i18n "footer.link.privacy" }}</a>
+          <a href="{{ "/download/" | relLangURL }}">{{ i18n "footer.link.download" }}</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">{{ i18n "footer.column.resources" }}</p>
+          <a href="{{ "/docs/" | relLangURL }}">{{ i18n "footer.link.docs" }}</a>
+          <a href="https://ko-fi.com/hugororschach" class="footer-support-link" target="_blank" rel="noopener">Support on Ko-fi</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">{{ i18n "footer.column.legal" }}</p>
+          <a href="{{ "/contact/" | relLangURL }}">Contact</a>
+          <a href="{{ "/privacy-policy/" | relLangURL }}">{{ i18n "footer.link.privacy_policy" }}</a>
+          <a href="{{ "/refund/" | relLangURL }}">Refund Policy</a>
+          <a href="{{ "/license/" | relLangURL }}">License</a>
+          <a href="{{ "/notice/" | relLangURL }}">Notice</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">{{ i18n "footer.copyright" | safeHTML }}</p>
+    </div>
+  </div>
+</footer>

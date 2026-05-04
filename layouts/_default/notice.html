@@ -1,0 +1,183 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">Legal · Notice</p>
+    <h1 class="page-title">Open Source Notice</h1>
+    <p class="page-sub">OFFTYPE is built on the work of many open-source projects. We're grateful for all of them.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container-narrow">
+    <article class="legal-doc">
+
+      <div class="legal-summary">
+        <p>OFFTYPE includes the open-source software components listed below. Each component is used under its own license. Names, copyright notices, and links to the upstream projects are reproduced in full as required.</p>
+        <p style="margin-top:var(--space-2);">
+          <a href="/NOTICE.txt" class="btn btn-secondary" download>Download NOTICE.txt</a>
+        </p>
+      </div>
+
+      <h2 class="heading-2">Core dependencies</h2>
+      <div class="notice-grid">
+
+        <div class="notice-card">
+          <h3 class="notice-name">sherpa-onnx <span class="notice-version">v1.13.0</span></h3>
+          <p class="notice-license">Apache 2.0</p>
+          <p class="notice-copyright">Copyright k2-fsa</p>
+          <a class="notice-link" href="https://github.com/k2-fsa/sherpa-onnx" target="_blank" rel="noopener">github.com/k2-fsa/sherpa-onnx</a>
+        </div>
+
+        <div class="notice-card">
+          <h3 class="notice-name">onnxruntime <span class="notice-version">v1.25.1</span></h3>
+          <p class="notice-license">MIT</p>
+          <p class="notice-copyright">Copyright Microsoft Corporation</p>
+          <a class="notice-link" href="https://github.com/microsoft/onnxruntime" target="_blank" rel="noopener">github.com/microsoft/onnxruntime</a>
+        </div>
+
+        <div class="notice-card">
+          <h3 class="notice-name">silero-vad <span class="notice-version">v6.2.1</span></h3>
+          <p class="notice-license">MIT</p>
+          <p class="notice-copyright">Copyright Silero</p>
+          <a class="notice-link" href="https://github.com/snakers4/silero-vad" target="_blank" rel="noopener">github.com/snakers4/silero-vad</a>
+        </div>
+
+        <div class="notice-card">
+          <h3 class="notice-name">PyAudio <span class="notice-version">v0.2.14</span></h3>
+          <p class="notice-license">MIT</p>
+          <a class="notice-link" href="https://people.csail.mit.edu/hubert/pyaudio/" target="_blank" rel="noopener">people.csail.mit.edu/hubert/pyaudio</a>
+        </div>
+
+        <div class="notice-card">
+          <h3 class="notice-name">websockets <span class="notice-version">v16.0</span></h3>
+          <p class="notice-license">BSD-3-Clause</p>
+          <p class="notice-copyright">Copyright Aymeric Augustin</p>
+          <a class="notice-link" href="https://github.com/python-websockets/websockets" target="_blank" rel="noopener">github.com/python-websockets/websockets</a>
+        </div>
+
+        <div class="notice-card">
+          <h3 class="notice-name">PyYAML <span class="notice-version">v6.0.2</span></h3>
+          <p class="notice-license">MIT</p>
+          <a class="notice-link" href="https://github.com/yaml/pyyaml" target="_blank" rel="noopener">github.com/yaml/pyyaml</a>
+        </div>
+
+        <div class="notice-card">
+          <h3 class="notice-name">requests <span class="notice-version">v2.33.1</span></h3>
+          <p class="notice-license">Apache 2.0</p>
+          <p class="notice-copyright">Copyright Kenneth Reitz</p>
+          <a class="notice-link" href="https://github.com/psf/requests" target="_blank" rel="noopener">github.com/psf/requests</a>
+        </div>
+
+        <div class="notice-card">
+          <h3 class="notice-name">numpy <span class="notice-version">v2.3.5</span></h3>
+          <p class="notice-license">BSD-3-Clause</p>
+          <p class="notice-copyright">Copyright NumPy Developers</p>
+          <a class="notice-link" href="https://github.com/numpy/numpy" target="_blank" rel="noopener">github.com/numpy/numpy</a>
+        </div>
+
+        <div class="notice-card">
+          <h3 class="notice-name">torch <span class="notice-version">v2.11.0</span></h3>
+          <p class="notice-license">BSD-3-Clause</p>
+          <p class="notice-copyright">Copyright PyTorch Contributors</p>
+          <a class="notice-link" href="https://github.com/pytorch/pytorch" target="_blank" rel="noopener">github.com/pytorch/pytorch</a>
+        </div>
+
+        <div class="notice-card">
+          <h3 class="notice-name">System.Drawing.Common <span class="notice-version">v8.0.0</span></h3>
+          <p class="notice-license">MIT</p>
+          <p class="notice-copyright">Copyright Microsoft Corporation</p>
+          <a class="notice-link" href="https://github.com/dotnet/runtime" target="_blank" rel="noopener">github.com/dotnet/runtime</a>
+        </div>
+
+      </div>
+
+      <h2 class="heading-2">AI models</h2>
+      <div class="notice-grid">
+
+        <div class="notice-card">
+          <h3 class="notice-name">SenseVoice-Small (ONNX int8)</h3>
+          <p class="notice-license">Apache 2.0</p>
+          <p class="notice-copyright">Copyright FunAudioLLM / Alibaba</p>
+          <a class="notice-link" href="https://github.com/FunAudioLLM/SenseVoice" target="_blank" rel="noopener">github.com/FunAudioLLM/SenseVoice</a>
+        </div>
+
+        <div class="notice-card">
+          <h3 class="notice-name">Qwen3-ASR 0.6B (int8 ONNX)</h3>
+          <p class="notice-license">Apache 2.0</p>
+          <p class="notice-copyright">Copyright Alibaba Cloud · ONNX conversion: zengshuishui</p>
+          <a class="notice-link" href="https://huggingface.co/Qwen/Qwen3-ASR-0.6B" target="_blank" rel="noopener">huggingface.co/Qwen/Qwen3-ASR-0.6B</a>
+        </div>
+
+        <div class="notice-card">
+          <h3 class="notice-name">Qwen2.5-1.5B-Instruct (GGUF Q4_K_M)</h3>
+          <p class="notice-license">Apache 2.0</p>
+          <p class="notice-copyright">Copyright Alibaba Cloud</p>
+          <a class="notice-link" href="https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct" target="_blank" rel="noopener">huggingface.co/Qwen/Qwen2.5-1.5B-Instruct</a>
+        </div>
+
+        <div class="notice-card">
+          <h3 class="notice-name">silero-vad model</h3>
+          <p class="notice-license">MIT</p>
+          <a class="notice-link" href="https://github.com/snakers4/silero-vad" target="_blank" rel="noopener">github.com/snakers4/silero-vad</a>
+        </div>
+
+      </div>
+
+      <h2 class="heading-2">Bundled inference engine</h2>
+      <div class="notice-grid">
+
+        <div class="notice-card">
+          <h3 class="notice-name">llama.cpp <span class="notice-version">rpc 1c6dca, Vulkan build</span></h3>
+          <p class="notice-license">MIT</p>
+          <p class="notice-copyright">Copyright llama.cpp contributors</p>
+          <p class="notice-meta">Binaries: llama-cli.exe, llama.dll, ggml.dll, ggml-base.dll, ggml-cpu-*.dll, ggml-vulkan.dll, llama-common.dll, mtmd.dll</p>
+          <a class="notice-link" href="https://github.com/ggerganov/llama.cpp" target="_blank" rel="noopener">github.com/ggerganov/llama.cpp</a>
+        </div>
+
+        <div class="notice-card">
+          <h3 class="notice-name">LLVM OpenMP (libomp140.x86_64.dll)</h3>
+          <p class="notice-license">MIT (with LLVM exceptions)</p>
+          <p class="notice-copyright">Copyright LLVM Project</p>
+          <a class="notice-link" href="https://github.com/llvm/llvm-project" target="_blank" rel="noopener">github.com/llvm/llvm-project</a>
+        </div>
+
+      </div>
+
+      <h2 class="heading-2">.NET runtime</h2>
+      <div class="notice-grid">
+
+        <div class="notice-card">
+          <h3 class="notice-name">.NET 8.0 (self-contained publish)</h3>
+          <p class="notice-license">MIT</p>
+          <p class="notice-copyright">Copyright Microsoft Corporation / .NET Foundation</p>
+          <a class="notice-link" href="https://github.com/dotnet/runtime" target="_blank" rel="noopener">github.com/dotnet/runtime</a>
+        </div>
+
+      </div>
+
+      <h2 class="heading-2">Transitive Python dependencies</h2>
+      <p class="caption">Bundled by PyInstaller into the speech-server distribution.</p>
+      <div class="notice-list">
+        <div class="notice-row"><span class="notice-row-name">attrs v26.1.0</span><span class="notice-row-license">MIT</span><a href="https://github.com/python-attrs/attrs" target="_blank" rel="noopener">github.com/python-attrs/attrs</a></div>
+        <div class="notice-row"><span class="notice-row-name">certifi</span><span class="notice-row-license">MPL 2.0</span><a href="https://github.com/certifi/python-certifi" target="_blank" rel="noopener">github.com/certifi/python-certifi</a></div>
+        <div class="notice-row"><span class="notice-row-name">cffi</span><span class="notice-row-license">MIT</span><a href="https://github.com/python-cffi/cffi" target="_blank" rel="noopener">github.com/python-cffi/cffi</a></div>
+        <div class="notice-row"><span class="notice-row-name">chardet</span><span class="notice-row-license">LGPL 2.1</span><a href="https://github.com/chardet/chardet" target="_blank" rel="noopener">github.com/chardet/chardet</a></div>
+        <div class="notice-row"><span class="notice-row-name">charset_normalizer</span><span class="notice-row-license">MIT</span><a href="https://github.com/Ousret/charset_normalizer" target="_blank" rel="noopener">github.com/Ousret/charset_normalizer</a></div>
+        <div class="notice-row"><span class="notice-row-name">cryptography</span><span class="notice-row-license">Apache 2.0 / BSD-3</span><a href="https://github.com/pyca/cryptography" target="_blank" rel="noopener">github.com/pyca/cryptography</a></div>
+        <div class="notice-row"><span class="notice-row-name">Cython</span><span class="notice-row-license">Apache 2.0</span><a href="https://github.com/cython/cython" target="_blank" rel="noopener">github.com/cython/cython</a></div>
+        <div class="notice-row"><span class="notice-row-name">idna</span><span class="notice-row-license">BSD-3-Clause</span><a href="https://github.com/kjd/idna" target="_blank" rel="noopener">github.com/kjd/idna</a></div>
+        <div class="notice-row"><span class="notice-row-name">lxml</span><span class="notice-row-license">BSD-3-Clause</span><a href="https://github.com/lxml/lxml" target="_blank" rel="noopener">github.com/lxml/lxml</a></div>
+        <div class="notice-row"><span class="notice-row-name">markupsafe</span><span class="notice-row-license">BSD-3-Clause</span><a href="https://github.com/pallets/markupsafe" target="_blank" rel="noopener">github.com/pallets/markupsafe</a></div>
+        <div class="notice-row"><span class="notice-row-name">setuptools</span><span class="notice-row-license">MIT</span><a href="https://github.com/pypa/setuptools" target="_blank" rel="noopener">github.com/pypa/setuptools</a></div>
+        <div class="notice-row"><span class="notice-row-name">tqdm</span><span class="notice-row-license">MIT</span><a href="https://github.com/tqdm/tqdm" target="_blank" rel="noopener">github.com/tqdm/tqdm</a></div>
+        <div class="notice-row"><span class="notice-row-name">urllib3</span><span class="notice-row-license">MIT</span><a href="https://github.com/urllib3/urllib3" target="_blank" rel="noopener">github.com/urllib3/urllib3</a></div>
+        <div class="notice-row"><span class="notice-row-name">werkzeug</span><span class="notice-row-license">BSD-3-Clause</span><a href="https://github.com/pallets/werkzeug" target="_blank" rel="noopener">github.com/pallets/werkzeug</a></div>
+      </div>
+
+      <p class="caption" style="margin-top:var(--space-4);">For OFFTYPE&apos;s own license terms, see the <a href="/license/">License page</a>.</p>
+    </article>
+  </div>
+</section>
+
+{{ end }}

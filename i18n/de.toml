@@ -1,0 +1,33 @@
+# OFFTYPE Website — German (Deutsch)
+# Translation generated 2026-05-04
+
+# 1. Site metadata (SEO)
+[meta]
+site_title = "OFFTYPE"
+
+[meta.home]
+title = "OFFTYPE — Deine Stimme. Bleibt lokal."
+
+[meta.compare]
+title = "Vergleich"
+
+[meta.privacy]
+title = "Privatsphäre"
+
+[meta.download]
+title = "Download"
+
+[meta.privacy_policy]
+title = "Datenschutzerklärung"
+
+[meta.docs]
+title = "Dokumentation"
+
+# 2. Navigation bar
+[nav]
+
+[nav.link]
+compare = "Vergleich"
+privacy = "Privatsphäre"
+docs = "Dokumentation"
+download = "Download"

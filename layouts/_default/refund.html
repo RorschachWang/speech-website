@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">{{ i18n "refund.hero.eyebrow" }}</p>
+    <h1 class="page-title">{{ i18n "refund.hero.title" }}</h1>
+    <p class="page-sub">{{ i18n "refund.hero.subtitle" }}</p>
+    <p class="legal-meta">{{ i18n "refund.hero.meta" }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container-narrow">
+    <article class="legal-doc">
+
+      <div class="legal-summary">
+        <h2 class="heading-2">{{ i18n "refund.summary.title" }}</h2>
+        <p>{{ i18n "refund.summary.body" | markdownify }}</p>
+      </div>
+
+      <h2 class="heading-2">{{ i18n "refund.section1.title" }}</h2>
+      <p>{{ i18n "refund.section1.body" | markdownify }}</p>
+
+      <h2 class="heading-2">{{ i18n "refund.section2.title" }}</h2>
+      <p>{{ i18n "refund.section2.body" | markdownify }}</p>
+      <ul class="legal-list">
+        <li>The email address used at purchase</li>
+        <li>Your order or receipt number (if available)</li>
+        <li>A brief reason (optional &mdash; helps us improve)</li>
+      </ul>
+      <p>We will process your refund within <strong>3 business days</strong> of receiving your request. Refunds are issued to the original payment method.</p>
+
+      <h2 class="heading-2">{{ i18n "refund.section3.title" }}</h2>
+      <p>{{ i18n "refund.section3.body" }}</p>
+      <ul class="legal-list">
+        <li>{{ i18n "refund.section3.item1" }}</li>
+        <li>{{ i18n "refund.section3.item2" }}</li>
+      </ul>
+
+      <h2 class="heading-2">{{ i18n "refund.section4.title" }}</h2>
+      <p>{{ i18n "refund.section4.body" }}</p>
+
+      <h2 class="heading-2">{{ i18n "refund.section5.title" }}</h2>
+      <p>{{ i18n "refund.section5.body" }}</p>
+
+      <h2 class="heading-2">{{ i18n "refund.section6.title" }}</h2>
+      <p>{{ i18n "refund.section6.body" }}</p>
+
+      <h2 class="heading-2">{{ i18n "refund.section7.title" }}</h2>
+      <p>{{ i18n "refund.section7.body" }}<br>
+        <a href="mailto:refund@offtype.app">refund@offtype.app</a>
+      </p>
+
+      <div class="legal-footer-note">
+        <p>{{ i18n "refund.disclaimer" }}</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,781 @@
+# 语壳 OFFTYPE 网站 — 简体中文
+
+# 1. Site metadata (SEO)
+[meta]
+site_title = "语壳 OFFTYPE"
+
+[meta.home]
+title = "语壳 OFFTYPE — 你的声音，留在本地。"
+
+[meta.compare]
+title = "功能对比"
+
+[meta.privacy]
+title = "隐私保护"
+
+[meta.download]
+title = "下载"
+
+[meta.privacy_policy]
+title = "隐私政策"
+
+[meta.docs]
+title = "使用指南"
+
+# 2. Navigation bar
+[nav]
+lang_aria = "切换语言"
+github_aria = "GitHub 仓库"
+github_title = "OFFTYPE on GitHub"
+
+[nav.link]
+compare = "功能对比"
+privacy = "隐私保护"
+docs = "使用指南"
+download = "下载"
+
+# 3. Footer
+[footer]
+[footer.column]
+product = "产品"
+resources = "资源"
+legal = "法律"
+
+[footer.link]
+home = "首页"
+compare = "功能对比"
+privacy = "隐私保护"
+download = "下载"
+docs = "使用指南"
+privacy_policy = "隐私政策"
+license = "许可证"
+notice = "声明"
+
+copyright = "&copy; 2026 OFFTYPE. 保留所有权利。"
+
+# 4. Common UI strings
+[button]
+download_windows = "下载 Windows 版"
+download_installer = "下载安装包"
+see_compare = "查看功能对比"
+see_proof = "查看 Wireshark 抓包"
+see_comparison = "查看对比"
+support_development = "支持开发"
+
+[badge]
+required = "必需"
+optional = "可选"
+
+# 5. HOME page
+[home]
+[home.hero]
+eyebrow = "OFFTYPE · Windows 离线语音输入"
+title = "你的声音。"
+title_accent = "留在本地。"
+subtitle = "自然说话，文字即刻出现——无需离开你的设备。\n没有云端，没有订阅，没有追踪。"
+note = "免费 · 约 200 MB 安装包 · Windows 10 及以上"
+
+[home.values]
+eyebrow = "与众不同之处"
+title = "三件事，别处没有。"
+
+[home.values.offline]
+title = "100% 离线"
+desc = "语音识别、标点、翻译——每一步都在本地运行。Wireshark 验证：零外部网络请求。"
+link = "查看证明 →"
+
+[home.values.translate]
+title = "实时翻译"
+desc = "说中文，出英文。或日语、韩语、法语、德语、西班牙语。六种目标语言，全程本地处理。"
+link = "对比功能 →"
+
+[home.values.dialects]
+title = "52 种语言与方言"
+desc = "普通话、英语、粤语、四川话、越南语、阿拉伯语、印地语等等。30 种语言 + 22 种中文方言，全部本地识别。"
+link = "查看所有模型 →"
+
+[home.steps]
+eyebrow = "使用方式"
+title = "四步走，零跳云端。"
+subtitle = "从麦克风到光标——每一个字节都留在你的设备上。"
+step1 = "麦克风"
+step2 = "本地语音识别"
+step3 = "本地 AI 处理"
+step4 = "文字出现"
+
+[home.proof_teaser]
+eyebrow = "证明，而非承诺"
+title = "1,683 个数据包。\n0 个外部连接。"
+body = "我们在使用 OFFTYPE 时运行了 Wireshark。数字是唯一重要的事——它们全部是零。"
+
+[home.cta]
+eyebrow = "免费试用"
+title = "随时开始。"
+body = "一次下载，永久使用。你的声音永不离开设备。"
+
+# 6. COMPARE page
+[compare]
+[compare.hero]
+eyebrow = "功能对比"
+title = "看看差别在哪里"
+subtitle = "三种不同的语音输入方案。其中一种留在你的机器上。"
+
+[compare.table]
+[compare.table.header]
+feature = "功能"
+cloud = "云端方案"
+offline = "离线转录"
+offtype = "OFFTYPE"
+
+[compare.table.row]
+processing_location_label = "处理位置"
+local_ai = "本地 AI 后处理"
+translation_label = "翻译到其他语言"
+platform_label = "平台"
+internet_label = "需要联网"
+price_label = "价格模式"
+
+[compare.table.row.processing_location]
+cloud = "云端"
+offline = "本地"
+offtype = "本地"
+
+[compare.table.row.platform]
+cloud = "跨平台"
+offline = "仅 Apple Silicon"
+offtype = "Windows"
+
+[compare.table.row.internet]
+cloud = "是"
+offline = "否"
+offtype = "否"
+
+[compare.table.row.price]
+cloud = "订阅制"
+offline = "一次性买断"
+offtype = "一次性买断"
+
+[compare.summary]
+title = "这意味着什么"
+body = "在我们对比的工具中，OFFTYPE 将语音识别和 AI 后处理都保留在本地。云端工具需要联网。大多数离线工具完全跳过后处理——OFFTYPE 则在本地完成纠错、翻译和润色。"
+
+[compare.cta]
+title = "准备好试试了吗？"
+body = "免费下载。适用于 Windows 10 及以上。"
+
+# 7. PRIVACY page (marketing/explainer)
+[privacy]
+[privacy.hero]
+eyebrow = "隐私为本的设计"
+title = "零网络请求。\n你的声音永不离开你的设备。"
+subtitle = "不是口号。是可验证的事实——Wireshark 截图为证。"
+
+[privacy.proof]
+eyebrow = "实时抓包，真实证明"
+title = "1,683 个数据包 · 0 个外部连接"
+body = "我们在使用 OFFTYPE 进行语音输入时运行了 Wireshark。过滤器 `ip.addr != 127.0.0.1 && ip.addr != ::1` 显示所有外部网络流量。结果不言自明。"
+caption = "过滤器：`ip.addr != 127.0.0.1 && ip.addr != ::1` · 捕获 1,683 个数据包 · 语音识别期间 0 个外部连接"
+
+[privacy.architecture]
+title = "你的数据如何流动"
+subtitle = "四个阶段，全部在设备本地进程内完成。"
+
+[privacy.architecture.stage1]
+title = "麦克风采集音频"
+body = "音频由系统麦克风采集，直接发送到本地语音服务器。它从不经过任何网络接口。"
+
+[privacy.architecture.stage2]
+title = "本地 ASR 模型将语音转为文字"
+body = "ASR 模型（SenseVoice-Small 或 Qwen3-ASR）完全在进程内运行。音频永不离开内存。"
+
+[privacy.architecture.stage3]
+title = "本地 AI 添加标点和纠错"
+body = "可选地，一个本地 15 亿参数模型添加标点、翻译或改写文本——全部本地处理。"
+
+[privacy.architecture.stage4]
+title = "文字注入到光标处"
+body = "最终文本通过剪贴板直接注入到目标应用中。它永远不会被发送到别处。"
+
+[privacy.cta]
+title = "隐私不是设置。\n它是架构。"
+body = "没有开关。没有追踪。没有云端。"
+
+# 8. DOWNLOAD page
+[download]
+[download.hero]
+eyebrow = "下载 · v1.0.0"
+title = "获取 OFFTYPE Windows 版"
+subtitle = "适用于 Windows 10 及以上，64 位系统。"
+size_note = "约 200 MB 安装包 · 模型首次运行时下载"
+
+[download.requirements]
+title = "系统要求"
+
+[download.requirements.os]
+label = "操作系统"
+value = "Windows 10 及以上（64 位）"
+
+[download.requirements.disk]
+label = "磁盘空间"
+value = "2 GB 可用空间"
+
+[download.requirements.memory]
+label = "内存"
+value = "推荐 8 GB RAM"
+
+[download.requirements.mic]
+label = "麦克风"
+value = "任意标准 Windows 兼容麦克风"
+
+[download.models]
+title = "模型"
+body = "OFFTYPE 按需下载模型。安装包内置模型管理器——无需手动设置。"
+
+[download.models.sense_voice]
+name = "SenseVoice-Small"
+desc = "默认 ASR 引擎。支持普通话、英语、日语、韩语、粤语。语言自动检测。"
+
+[download.models.qwen3_asr]
+name = "Qwen3-ASR 0.6B"
+desc = "更广泛覆盖：30 种语言 + 22 种中文方言。增加四川话、越南语、阿拉伯语、印地语等。速度略慢于 SenseVoice。"
+
+[download.models.qwen25]
+name = "Qwen2.5-1.5B (GGUF)"
+desc = "本地大语言模型，用于标点纠错、翻译和文字润色。无需联网运行。"
+
+[download.changelog]
+title = "更新日志"
+
+[download.changelog.v1_0_0]
+desc = "初始版本。离线语音输入，本地 AI 处理，实时翻译，方言支持。"
+
+# 9. Support block (on Download page)
+[support]
+title = "支持开发"
+
+[support.pay_what_you_want]
+title = "随心意支持"
+body = "OFFTYPE 是免费的，但开发它花了不少咖啡。如果它帮你节省了时间，不妨留点小费。"
+
+# 10. PRIVACY POLICY page (legal)
+[privacy_policy]
+[privacy_policy.hero]
+eyebrow = "法律 · 隐私政策"
+title = "隐私政策"
+subtitle = "我们不收集任何东西。此政策详细说明这意味着什么。"
+meta = "生效日期：2026-05-03 · 最后更新：2026-05-03"
+
+[privacy_policy.section1]
+title = "OFFTYPE 不做什么"
+intro = "OFFTYPE **不会**收集、传输或存储："
+item1 = "语音录音或麦克风输入"
+item2 = "转录文本或键盘输入"
+item3 = "你使用应用时的文档或窗口"
+item4 = "姓名、邮箱或账户信息（没有账户）"
+item5 = "IP 地址、设备标识符或系统元数据"
+item6 = "崩溃报告、遥测或使用分析"
+item7 = "没有账户。没有分析服务。"
+
+[privacy_policy.section2]
+title = "网络活动"
+intro = "OFFTYPE 仅在以下两种情况下连接互联网："
+p1 = "**1. 模型下载** —— 安装或更新 AI 模型时，文件从 [Hugging Face](https://huggingface.co/privacy) 或 [ModelScope](https://www.modelscope.cn/privacy) 下载。这些服务可能根据其各自的政策记录标准 HTTP 元数据（IP、用户代理）。我们不接收这些数据。你可以跳过可选模型；只有默认 ASR 模型在首次运行时自动下载。"
+p2 = "**2. 更新检查** —— 应用可能检查 [GitHub Releases](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement) 以获取新版本。这直接向 GitHub 发送最小请求；我们不接收或记录它。你可以在设置中禁用此功能。"
+p3 = "语音识别、标点、翻译和文本注入完全在你的设备上完成，不发出任何网络请求。"
+
+[privacy_policy.section3]
+title = "本地数据存储"
+intro = "OFFTYPE 仅在你的设备上存储以下内容："
+item1 = "**配置文件：** `%APPDATA%/OFFTYPE/config.yaml` —— 你的热键、模型选择和偏好设置。"
+item2 = "**模型文件：** `%APPDATA%/OFFTYPE/models/` —— 已下载的 AI 模型。"
+item3 = "**日志：** `%APPDATA%/OFFTYPE/logs/` —— 本地诊断日志（仅在此机器上，永不传输）。"
+outro = "你可以随时删除以上任何内容。通过「添加或删除程序」卸载 OFFTYPE 会移除应用程序；数据文件夹可能需要手动删除才能完全清除。"
+
+[privacy_policy.section4]
+title = "Cookie 与追踪"
+body = "OFFTYPE 是桌面应用，不是网站。它不使用 Cookie 或追踪器。"
+
+[privacy_policy.section5]
+title = "第三方组件"
+p1 = "OFFTYPE 使用开源 AI 模型和库。它们都不会从你的设备传输数据。完整列表请见[声明](/notice/)页面。"
+p2 = "使用网络功能时，你直接与 [Hugging Face](https://huggingface.co/privacy)、[ModelScope](https://www.modelscope.cn/privacy) 和 [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement) 交互。"
+
+[privacy_policy.section6]
+title = "你的权利"
+body = "因为我们不收集个人数据，通常没有数据可供访问、更正或删除。如果你在欧盟，根据 GDPR，你对第三方服务（Hugging Face、ModelScope、GitHub）在使用网络功能时可能处理的个人数据享有权利。要行使这些权利，请直接联系这些服务，或发邮件给我们，我们会为你指明方向。"
+
+[privacy_policy.section7]
+title = "本政策的变更"
+body = "如果此政策发生变更，我们将更新顶部的日期并在网站上发布通知。重大变更也会出现在应用的发布说明中。"
+
+[privacy_policy.section8]
+title = "联系方式"
+body = "有问题？请发送邮件至 [privacy@offtype.app](mailto:privacy@offtype.app)。"
+
+disclaimer = "*本政策以简洁中文提供。不替代法律建议。*"
+
+# 11. REFUND page
+[refund]
+[refund.hero]
+eyebrow = "法律 · 退款政策"
+title = "退款政策"
+subtitle = "7 天无理由退款保证。"
+meta = "生效日期：2026-05-04 · 最后更新：2026-05-04"
+
+[refund.summary]
+title = "概述"
+body = "如果 OFFTYPE 不适合你，在购买后 7 天内发送邮件给我们，我们将全额退款。不需要理由。免费下载不受影响——此政策仅适用于付费购买。"
+
+[refund.section1]
+title = "1. 适用条件"
+body = "我们对所有 OFFTYPE 的付费购买提供 **7 天退款保证**。如果你对 OFFTYPE 有任何不满意，可以在购买之日起 7 天内申请全额退款。"
+
+[refund.section2]
+title = "2. 如何申请退款"
+body = "发送邮件至 [refund@offtype.app](mailto:refund@offtype.app)，包含："
+
+[refund.section3]
+title = "3. 例外情况"
+body = "以下情况不予退款："
+item1 = "自购买之日起超过 7 天"
+item2 = "通过第三方经销商购买——请联系经销商直接处理"
+
+[refund.section4]
+title = "4. 拒付"
+body = "如果你在使用 OFFTYPE 时遇到任何问题，请在向支付服务商提出拒付之前联系我们。我们致力于尽快解决你的问题，直接退款比拒付争议更快。"
+
+[refund.section5]
+title = "5. 免费下载"
+body = "OFFTYPE 的基础应用可免费下载和使用。此退款政策仅适用于可选的付费购买（如专业版功能、自愿支持贡献）。免费用户无权获得退款，因为没有支付任何费用。"
+
+[refund.section6]
+title = "6. 自愿贡献"
+body = "如果你通过「随心意支持」或捐赠方式支持 OFFTYPE，同样适用 7 天退款政策。发送邮件给我们，我们将全额退还贡献金额。"
+
+[refund.section7]
+title = "7. 联系方式"
+body = "退款咨询："
+
+disclaimer = "本政策以简洁中文撰写以方便阅读，不替代法律建议。如果你的组织有特定的合规问题，请咨询合资格律师。"
+
+# 12. CONTACT page
+[contact]
+[contact.hero]
+eyebrow = "法律 · 联系我们"
+title = "联系我们"
+subtitle = "一个小团队，在一个时区工作。电子邮件是联系我们最快的方式——我们会阅读每一条消息。"
+
+[contact.summary]
+p1 = "选择符合你需求的邮箱。如果不确定，使用 [hello@offtype.app](mailto:hello@offtype.app)，我们会转发至相应人员。"
+response = "响应时间：通常在 2 个工作日内。退款请求在收到后 3 个工作日内处理。"
+
+[contact.card]
+general_label = "一般咨询与媒体"
+general_email = "hello@offtype.app"
+general_note = "不属于以下分类的任何事宜——合作、媒体、建议，或只是打个招呼。"
+
+support_label = "产品支持"
+support_email = "support@offtype.app"
+support_note = "Bug、安装问题、故障排除、功能建议。请附上你的 Windows 版本和 OFFTYPE 版本。"
+
+privacy_label = "隐私与数据"
+privacy_email = "privacy@offtype.app"
+privacy_note = "关于我们的[隐私政策](/privacy-policy/)、数据处理或合规的问题。"
+
+refund_label = "退款与账单"
+refund_email = "refund@offtype.app"
+refund_note = "购买后 7 天内的退款申请。请参阅[退款政策](/refund/)。"
+
+[contact.before]
+title = "发邮件之前"
+body = "如果你的问题是关于如何使用某项功能，[使用指南](/docs/)可能已经涵盖——安装、模型、热键、故障排除和常见问题。省下一轮邮件往返。"
+
+[contact.security]
+title = "安全披露"
+body = "如果你发现了安全漏洞，请发送邮件至 [hello@offtype.app](mailto:hello@offtype.app)，主题中包含「Security」，我们将在 48 小时内回复。请在我们有机会修复之前不要公开提交问题。"
+
+[contact.footer_note]
+body = "OFFTYPE 作为独立项目运营。我们没有电话热线、邮寄地址或在线客服。邮件能让你联系到真人。"
+
+# 13. DOCS page
+[docs]
+
+[docs.whatis]
+title = "这是什么"
+body = "OFFTYPE 是一款**全离线**语音输入工具。说话自动变文字，注入到你正在使用的任何软件里。不需要联网，数据不出你的电脑。"
+
+[docs.whatis.features]
+input = "**语音输入**：说话 → 文字直接上屏，替代打字"
+translate = "**翻译**：说中文 → 输出英文/日文/韩文/法文/西班牙文/德文"
+polish = "**润色**：把口语写成正式/随意/简练风格"
+dictionary = "**自定义词典**：告诉软件你的人名、术语、缩写该写成什么"
+
+[docs.requirements]
+title = "系统要求"
+
+[docs.requirements.table]
+item = "项目"
+minimum = "最低配置"
+
+[docs.requirements.row1]
+item = "操作系统"
+value = "Windows 10 64-bit 或更新"
+
+[docs.requirements.row2]
+item = "内存"
+value = "8 GB"
+
+[docs.requirements.row3]
+item = "磁盘空间"
+value = "2 GB（含 SenseVoice 模型）"
+
+[docs.requirements.row4]
+item = "网络"
+value = "仅首次下载模型时需要"
+
+[docs.install]
+title = "安装"
+step1 = "双击 `OFFTYPE-Setup-1.0.0.exe`"
+step2 = "按向导提示操作（选安装目录、是否创建桌面快捷方式）"
+step3 = "安装完成后自动启动"
+
+[docs.install.security]
+title = "你可能遇到的安全提示"
+body = "OFFTYPE 内嵌了 [llama.cpp](https://github.com/ggerganov/llama.cpp)（MIT 开源协议）来做本地翻译和润色。这个开源软件的 Windows 可执行文件叫 `llama-cli.exe`，因为没有商业代码签名证书（年费 $200-400），Windows 安全中心可能把它当作未知应用拦截。"
+blocked = "如果你看到 \"受控文件夹访问已阻止 llama-cli.exe\"："
+step1 = "打开 Windows 安全中心 → 病毒和威胁防护"
+step2 = "点击\"管理受控文件夹访问\""
+step3 = "点击\"允许应用通过受控文件夹访问\"→ 添加允许的应用"
+step4 = "浏览到 `C:\\Program Files\\OFFTYPE\\speech-server\\_internal\\llama-cpp\\llama-cli.exe`"
+step5 = "确认"
+skip = "不添加会怎样？"
+skip_body = "翻译和润色功能不工作，语音输入（ASR）不受影响。你自己选择。"
+why = "为什么不能自动帮你处理？"
+why_body = "修改系统安全设置是对你电脑的重大变更，OFFTYPE 不会替你做这个决定。"
+
+[docs.firstlaunch]
+title = "首次使用"
+body = "OFFTYPE 启动后会自动连接本地服务。如果模型还没下载，会提示你下载。"
+
+[docs.firstlaunch.required]
+title = "必须下载的模型"
+note = "首次启动会自动弹出下载窗口。"
+
+[docs.firstlaunch.required.table]
+model = "模型"
+size = "大小"
+purpose = "用途"
+
+[docs.firstlaunch.required.row]
+model = "SenseVoice"
+size = "~239 MB"
+purpose = "语音识别（必装）"
+
+[docs.firstlaunch.optional]
+title = "可选下载的模型"
+note = "没有 Local LLM 也能用语音输入。翻译和润色也可以选装 [Ollama](https://ollama.com) 用更大的模型。"
+
+[docs.firstlaunch.optional.table]
+model = "模型"
+size = "大小"
+purpose = "用途"
+
+[docs.firstlaunch.optional.row1]
+model = "Qwen3-ASR"
+size = "~988 MB"
+purpose = "多语种 + 方言增强：30 语种 + 22 种汉语方言（四川话、广东话、越南语、阿拉伯语等）"
+
+[docs.firstlaunch.optional.row2]
+model = "Local LLM（1.5B）"
+size = "~1.04 GB"
+purpose = "本地翻译/润色，不需要装 Ollama"
+
+[docs.usage]
+title = "基本使用"
+
+[docs.usage.ptt]
+title = "按住说话（PTT）"
+step1 = "点击 \"Push to Talk\""
+step2 = "按住 **Ctrl+Space**，开始说话"
+step3 = "说完松开 —— 文字自动上屏到你当前光标位置"
+note = "这是默认模式，适合短句输入。"
+
+[docs.usage.vad]
+title = "持续监听（VAD）"
+step1 = "点 **...** 展开设置面板"
+step2 = "Trigger 选 **VAD**"
+step3 = "开始说话 —— 软件自动检测说话和停顿，每说完一句自动上屏"
+note = "不需要按键。适合大段语音输入。"
+check = "如何判断 VAD 是否正常工作？"
+check_body = "看 Push to Talk 按钮的颜色：\n- **绿灯闪烁（呼吸灯）**：检测到语音，正常工作\n- **绿灯常亮不灭**：VAD 引擎已启动但未检测到语音，可能是麦克风问题或模型未加载成功。退出后重试，若仍常亮请检查 Preferences 中 ASR 模型是否已下载"
+
+[docs.usage.modes]
+title = "切换模式"
+body = "在展开面板的 **Process** 下拉框中选择："
+
+[docs.usage.modes.table]
+mode = "模式"
+result = "效果"
+
+[docs.usage.modes.row1]
+mode = "Input"
+result = "说话 → 文字（默认）"
+
+[docs.usage.modes.row2]
+mode = "Translate"
+result = "说中文 → 翻译成目标语言上屏"
+
+[docs.usage.modes.row3]
+mode = "Polish"
+result = "说中文 → 改写风格后上屏"
+
+[docs.settings]
+title = "设置面板"
+body = "点 **...** 展开，包含 4 个配置项："
+item1 = "**Trigger**：PTT（按住说话）或 VAD（持续监听）"
+item2 = "**Process**：Input / Translate / Polish"
+item3 = "**Target**：目标语言（翻译模式）"
+item4 = "**Style**：润色风格（Formal 正式 / Casual 随意 / Simple 简练）"
+
+[docs.preferences]
+title = "偏好设置"
+body = "点击齿轮图标打开。包含："
+
+[docs.preferences.asr]
+title = "ASR Model"
+body = "语音识别模型选择。下拉框自动显示已下载的模型，未下载的标注\"(download required)\"。\n- **SenseVoice**：默认，支持中英日韩粤 5 语种，速度快\n- **Qwen3-ASR**：30 语种 + 22 汉语方言（四川话、广东话、越南语等），速度比 SenseVoice 慢"
+
+[docs.preferences.ollama]
+title = "Ollama"
+body = "如果你已安装 [Ollama](https://ollama.com)（`ollama pull qwen2.5:7b`），打开此开关可以用 7B 大模型做翻译和润色，质量比本地 1.5B 好。"
+
+[docs.preferences.llm]
+title = "Local LLM"
+body = "Qwen2.5 1.5B 本地模型。没装 Ollama 时，翻译和润色全靠它。点击 Download 下载。"
+
+[docs.preferences.dict]
+title = "Dictionary"
+body = "自定义词典编辑器。适合添加固定术语映射："
+note = "**不能修方言口音问题**。词典是纯文字替换，\"四川人说四\"和\"是\"没法靠字典区分。"
+
+[docs.preferences.dict.table]
+spoken = "原文字"
+replace = "替换为"
+
+[docs.preferences.dict.row1]
+spoken = "壳牌"
+replace = "OFFTYPE"
+
+[docs.preferences.dict.row2]
+spoken = "阿里八八"
+replace = "阿里巴巴"
+
+[docs.preferences.fast]
+title = "Fast Typing"
+body = "开启后使用 SenseVoice 内置标点，跳过 LLM 纠错。速度快，但标点可能不太准。适合快速输入。"
+
+[docs.tray]
+title = "托盘操作"
+body = "关闭窗口（点 X）→ 缩到系统托盘，后台继续工作。双击托盘图标恢复窗口，右键菜单："
+item1 = "**Show**：恢复窗口"
+item2 = "**Exit**：完全退出"
+
+[docs.hero]
+eyebrow = "文档"
+title = "60 秒上手"
+subtitle = "安装 OFFTYPE，按下热键，开始说话。此页面涵盖其他所有内容。"
+
+[docs.toc]
+label = "本页目录"
+whatis = "这是什么"
+requirements = "系统要求"
+install = "安装"
+firstlaunch = "首次使用"
+usage = "基本使用"
+settings = "设置面板"
+preferences = "偏好设置"
+tray = "托盘操作"
+troubleshooting = "故障排除"
+faq = "常见问题"
+support = "获取支持"
+
+[docs.quickstart]
+title = "快速开始"
+
+[docs.quickstart.step1]
+title = "下载安装包。"
+body = "前往[下载页面](/download/)下载 Windows 安装包（约 200 MB）。"
+
+[docs.quickstart.step2]
+title = "运行安装包。"
+body = "双击 `.exe` 文件。如果 Windows SmartScreen 弹出警告，点击「更多信息」→「仍要运行」。OFFTYPE 安装至 `C:\\Program Files\\OFFTYPE\\`。"
+
+[docs.quickstart.step3]
+title = "首次启动下载默认模型。"
+body = "OFFTYPE 首次运行时下载 SenseVoice-Small（约 230 MB）。这是唯一必需的模型。"
+
+[docs.quickstart.step4]
+title = "按下 Ctrl + 空格键并说话。"
+body = "按住热键，自然说话，松开。你的文字出现在光标处。"
+
+[docs.hotkey]
+title = "使用热键"
+default = "默认热键：`Ctrl` + `Space`"
+hold = "**按住说话：** 按住热键，说话，然后松开。识别出的文本被注入到光标处。"
+toggle = "**点击切换：** 在设置中，你可以切换到切换模式——点击一次开始，再点击一次停止。"
+change = "**更改热键：** 右键点击托盘图标 → 设置 → 热键。支持任意组合键。"
+
+[docs.dialects]
+title = "切换模型和语言"
+intro = "OFFTYPE 配备两个 ASR 引擎，可从托盘图标切换："
+
+[docs.dialects.table]
+engine = "引擎"
+bestfor = "最适合"
+languages = "语言"
+
+[docs.dialects.table.row1]
+engine = "**SenseVoice-Small**（默认）"
+bestfor = "普通话、英语、日语、韩语"
+languages = "5 种语言，自动检测"
+
+[docs.dialects.table.row2]
+engine = "**Qwen3-ASR**"
+bestfor = "地区方言"
+languages = "30 种语言 + 22 种中文方言，包括粤语、四川话、上海话"
+outro = "右键点击托盘图标 → ASR 引擎 → 选择。如果模型已下载，即刻加载；否则自动下载。"
+
+[docs.translate]
+title = "实时翻译"
+intro = "OFFTYPE 可以在你说话时实时翻译。说中文，出英文。说英文，出日语。六种目标语言：英语、日语、韩语、法语、德语、西班牙语。"
+step1 = "打开设置 → 翻译。"
+step2 = "启用翻译并选择目标语言。"
+step3 = "说话。翻译后的文字出现在光标处。"
+outro = "翻译完全在你的机器上通过本地大语言模型（Qwen2.5-1.5B）运行。如果你还没有下载，请从设置 → 模型下载（约 1.1 GB）。"
+
+[docs.config]
+title = "配置与数据位置"
+intro = "OFFTYPE 将所有内容存储在 `%APPDATA%\\OFFTYPE\\`："
+
+[docs.config.table]
+path = "路径"
+contains = "包含内容"
+
+[docs.config.row]
+config = "热键、模型选择、翻译设置"
+models = "已下载的 AI 模型"
+logs = "本地诊断日志（永不传输）"
+outro = "快速打开配置文件夹：托盘图标 → 打开配置文件夹。"
+
+[docs.troubleshooting]
+title = "故障排除"
+
+[docs.troubleshooting.hotkey]
+title = "热键无反应"
+item1 = "检查托盘图标是否为绿色（活动状态）。如果是红色，右键 → 重启服务器。"
+item2 = "另一个应用可能正在占用 `Ctrl`+`Space`。在设置中更改热键。"
+
+[docs.troubleshooting.mic]
+title = "检测不到麦克风输入"
+item1 = "打开 Windows 设置 → 隐私 → 麦克风，允许桌面应用访问麦克风。"
+item2 = "右键托盘图标 → 设置 → 音频设备，选择正确的麦克风。"
+
+[docs.troubleshooting.slow]
+title = "识别速度慢"
+item1 = "启动后首次识别较慢，因为模型正在加载到内存。后续识别即时响应。"
+item2 = "如果不需要方言支持，切换到 SenseVoice-Small（更快）。"
+item3 = "如果只需要转录，关闭翻译功能。"
+
+[docs.troubleshooting.download]
+title = "模型下载失败"
+item1 = "检查网络连接。模型下载需要一次性连接到 Hugging Face 或 ModelScope。"
+item2 = "如果 Hugging Face 速度慢，在设置 → 模型 → 镜像中切换到 ModelScope 镜像。"
+
+[docs.troubleshooting.t1]
+title = "翻译/润色没反应？"
+item1 = "偏好设置 → Ollama 开关是否开启且 Ollama 是否在运行？（开启且不在线 = 一直等连接）"
+item2 = "Local LLM 是否已下载？"
+item3 = "是否被 Windows 受控文件夹访问拦截？（见上方\"安装\"章节）"
+
+[docs.troubleshooting.t2]
+title = "下载速度慢？"
+item1 = "SenseVoice 从 HuggingFace / ModelScope 下载，国内通常走 ModelScope，速度应正常。"
+item2 = "Qwen3-ASR 从 GitHub Releases 下载，国内可能慢。软件会自动测速选最快的镜像。"
+
+[docs.troubleshooting.t3]
+title = "启动后没反应？"
+item1 = "等 5 秒 —— 服务端需要启动时间"
+item2 = "打开任务管理器看 `speech-server.exe` 是否在运行"
+item3 = "如果上一步已安装过旧版，手动杀进程再启动：`taskkill /F /IM speech-server.exe`"
+
+[docs.troubleshooting.t4]
+title = "如何卸载？"
+item1 = "开始菜单 → 设置 → 应用 → 已安装的应用 → 搜索 OFFTYPE → 卸载。"
+item2 = "模型文件在 `%APPDATA%\\OFFTYPE\\models\\`，卸载后需手动删除。"
+
+[docs.faq]
+title = "常见问题"
+q1 = "OFFTYPE 会把我的声音发送到别处吗？"
+a1 = "不会。语音识别、标点和翻译全部在你的机器上完成。请参阅[隐私保护](/privacy/)页面查看 Wireshark 证明。"
+q2 = "OFFTYPE 能离线使用吗？"
+a2 = "可以，在首次下载模型后即可完全离线使用。"
+q3 = "能在 macOS 或 Linux 上使用吗？"
+a3 = "目前不能。OFFTYPE 仅支持 Windows。macOS 和 Linux 不在近期路线图中。"
+q4 = "有付费版吗？"
+a4 = "OFFTYPE 目前完全免费，没有订阅，没有账户，没有支付。"
+q5 = "能在企业网络环境中使用吗？"
+a5 = "可以。OFFTYPE 仅在初始模型下载和可选更新检查时需要网络。之后完全离线工作。如果你的防火墙屏蔽了 Hugging Face，配置 ModelScope 镜像即可。"
+q6 = "如何卸载？"
+a6 = "Windows 设置 → 应用 → OFFTYPE → 卸载。要彻底删除所有数据，手动删除 `%APPDATA%\\OFFTYPE\\`。"
+
+[docs.support]
+title = "获取支持"
+intro = "如果有问题，请发送邮件给我们，附上："
+item1 = "你的 Windows 版本"
+item2 = "OFFTYPE 版本（托盘图标 → 关于）"
+item3 = "你尝试做什么"
+item4 = "你看到的任何错误信息"
+contact = "联系方式："
+
+[docs.contact]
+stuck = "还是不行？发送邮件至 [support@offtype.app](mailto:support@offtype.app)，附上你的 Windows 版本、OFFTYPE 版本、你尝试做什么以及任何错误信息。我们会阅读每一条消息。"
+
+# 14. Language switcher labels
+[lang_switcher]
+[lang.en]
+label = "English"
+
+[lang.zh]
+label = "简体中文"
+
+[lang.ja]
+label = "日本語"
+
+[lang.ko]
+label = "한국어"
+
+[lang.fr]
+label = "Français"
+
+[lang.de]
+label = "Deutsch"
+
+[lang.es]
+label = "Español"
+
+coming_soon = "即将推出"
+
+# 15. License & Notice pages (English only — not translated)
+[license]
+[license.hero]
+eyebrow = "法律 · 许可证"
+title = "许可证"
+subtitle = "Apache License 2.0"
+
+body = "OFFTYPE 基于 Apache License, Version 2.0 许可。"
+
+[notice]
+[notice.hero]
+eyebrow = "法律 · 声明"
+title = "第三方声明"
+subtitle = "OFFTYPE 中集成的开源组件。"

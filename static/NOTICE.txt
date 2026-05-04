@@ -1,0 +1,147 @@
+OFFTYPE
+Copyright 2026 OFFTYPE Contributors
+
+This product includes the following open source software components:
+
+---
+
+sherpa-onnx (v1.13.0)
+  License: Apache 2.0
+  Copyright: k2-fsa
+  https://github.com/k2-fsa/sherpa-onnx
+
+onnxruntime (v1.25.1)
+  License: MIT
+  Copyright: Microsoft Corporation
+  https://github.com/microsoft/onnxruntime
+
+silero-vad (v6.2.1)
+  License: MIT
+  Copyright: Silero
+  https://github.com/snakers4/silero-vad
+
+speech-server (Python backend, PyInstaller bundled)
+  License: Apache 2.0
+
+PyAudio (v0.2.14)
+  License: MIT
+  https://people.csail.mit.edu/hubert/pyaudio/
+
+websockets (v16.0)
+  License: BSD-3-Clause
+  Copyright: Aymeric Augustin
+  https://github.com/python-websockets/websockets
+
+PyYAML (v6.0.2)
+  License: MIT
+  https://github.com/yaml/pyyaml
+
+requests (v2.33.1)
+  License: Apache 2.0
+  Copyright: Kenneth Reitz
+  https://github.com/psf/requests
+
+numpy (v2.3.5)
+  License: BSD-3-Clause
+  Copyright: NumPy Developers
+  https://github.com/numpy/numpy
+
+torch (v2.11.0)
+  License: BSD-3-Clause
+  Copyright: PyTorch Contributors
+  https://github.com/pytorch/pytorch
+
+System.Drawing.Common (v8.0.0)
+  License: MIT
+  Copyright: Microsoft Corporation
+  https://github.com/dotnet/runtime
+
+---
+
+Model: SenseVoice-Small (ONNX int8)
+  License: Apache 2.0
+  Copyright: FunAudioLLM / Alibaba
+  https://github.com/FunAudioLLM/SenseVoice
+
+Model: Qwen3-ASR 0.6B (int8 quantized, ONNX format)
+  License: Apache 2.0
+  Copyright: Alibaba Cloud
+  ONNX conversion: zengshuishui/Qwen3-ASR-onnx (ModelScope)
+  https://huggingface.co/Qwen/Qwen3-ASR-0.6B
+
+Model: Qwen2.5-1.5B-Instruct (GGUF Q4_K_M)
+  License: Apache 2.0
+  Copyright: Alibaba Cloud
+  https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+
+VAD Model: silero-vad (silero_vad.onnx)
+  License: MIT
+  https://github.com/snakers4/silero-vad
+
+---
+Bundled inference engine:
+
+llama.cpp (rpc 1c6dca, Vulkan build)
+  License: MIT
+  Copyright: llama.cpp contributors
+  https://github.com/ggerganov/llama.cpp
+  Binaries: llama-cli.exe, llama.dll, ggml.dll, ggml-base.dll,
+            ggml-cpu-*.dll, ggml-vulkan.dll, llama-common.dll, mtmd.dll
+
+LLVM OpenMP (libomp140.x86_64.dll)
+  License: MIT (with LLVM exceptions)
+  Copyright: LLVM Project
+  https://github.com/llvm/llvm-project
+
+---
+.NET Runtime:
+
+.NET 8.0 (self-contained publish)
+  License: MIT
+  Copyright: Microsoft Corporation / .NET Foundation
+  https://github.com/dotnet/runtime
+
+---
+Transitive Python dependencies (bundled by PyInstaller):
+
+attrs (v26.1.0) — MIT
+  https://github.com/python-attrs/attrs
+
+certifi — MPL 2.0
+  https://github.com/certifi/python-certifi
+
+cffi — MIT
+  https://github.com/python-cffi/cffi
+
+chardet — LGPL 2.1
+  https://github.com/chardet/chardet
+
+charset_normalizer — MIT
+  https://github.com/Ousret/charset_normalizer
+
+cryptography — Apache 2.0 / BSD-3-Clause
+  https://github.com/pyca/cryptography
+
+Cython — Apache 2.0
+  https://github.com/cython/cython
+
+idna — BSD-3-Clause
+  https://github.com/kjd/idna
+
+lxml — BSD-3-Clause
+  https://github.com/lxml/lxml
+
+markupsafe — BSD-3-Clause
+  https://github.com/pallets/markupsafe
+
+setuptools — MIT
+  https://github.com/pypa/setuptools
+
+tqdm — MIT
+  https://github.com/tqdm/tqdm
+
+urllib3 — MIT
+  https://github.com/urllib3/urllib3
+
+werkzeug — BSD-3-Clause
+  https://github.com/pallets/werkzeug

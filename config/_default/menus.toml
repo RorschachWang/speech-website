@@ -1,0 +1,19 @@
+[[main]]
+name = "Home"
+pageRef = "_index"
+url = "/"
+
+[[main]]
+name = "Compare"
+pageRef = "compare"
+url = "/compare/"
+
+[[main]]
+name = "Privacy"
+pageRef = "privacy"
+url = "/privacy/"
+
+[[main]]
+name = "Download"
+pageRef = "download"
+url = "/download/"

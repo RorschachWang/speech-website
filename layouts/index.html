@@ -1,0 +1,136 @@
+{{ define "main" }}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-icon">
+      <img src="{{ "logo/offtype-icon-teal.svg" | relURL }}" alt="OFFTYPE">
+    </div>
+    <p class="eyebrow">{{ i18n "home.hero.eyebrow" }}</p>
+    <h1 class="hero-title">{{ i18n "home.hero.title" | safeHTML }}<br><span class="text-accent">{{ i18n "home.hero.title_accent" }}</span></h1>
+    <p class="hero-sub">{{ i18n "home.hero.subtitle" | safeHTML }}</p>
+    <div class="hero-actions">
+      <a href="{{ "/download/" | relLangURL }}" class="btn btn-primary btn-large">{{ i18n "button.download_windows" }}</a>
+      <a href="{{ "/compare/" | relLangURL }}" class="btn btn-secondary btn-large">{{ i18n "button.see_compare" }}</a>
+    </div>
+    <p class="caption hero-note">{{ i18n "home.hero.note" }}</p>
+  </div>
+</section>
+
+<!-- CORE VALUES -->
+<section class="section">
+  <div class="container">
+    <p class="eyebrow eyebrow-accent" style="text-align:center;">{{ i18n "home.values.eyebrow" }}</p>
+    <h2 class="section-title" style="text-align:center;margin-bottom:48px;">{{ i18n "home.values.title" }}</h2>
+    <div class="values-grid">
+      <div class="value-item">
+        <div class="value-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <div class="value-title">{{ i18n "home.values.offline.title" }}</div>
+        <div class="value-desc">{{ i18n "home.values.offline.desc" }}</div>
+        <a href="{{ "/privacy/" | relLangURL }}" class="value-link">{{ i18n "home.values.offline.link" }}</a>
+      </div>
+      <div class="value-item">
+        <div class="value-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+        </div>
+        <div class="value-title">{{ i18n "home.values.translate.title" }}</div>
+        <div class="value-desc">{{ i18n "home.values.translate.desc" }}</div>
+        <a href="{{ "/compare/" | relLangURL }}" class="value-link">{{ i18n "home.values.translate.link" }}</a>
+      </div>
+      <div class="value-item">
+        <div class="value-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div class="value-title">{{ i18n "home.values.dialects.title" }}</div>
+        <div class="value-desc">{{ i18n "home.values.dialects.desc" }}</div>
+        <a href="{{ "/download/" | relLangURL }}" class="value-link">{{ i18n "home.values.dialects.link" }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section section-alt">
+  <div class="container">
+    <p class="eyebrow eyebrow-accent" style="text-align:center;">{{ i18n "home.steps.eyebrow" }}</p>
+    <h2 class="section-title" style="text-align:center;margin-bottom:16px;">{{ i18n "home.steps.title" }}</h2>
+    <p style="text-align:center;color:var(--color-text-secondary);margin-bottom:48px;">{{ i18n "home.steps.subtitle" }}</p>
+    <div class="steps-flow">
+      <div class="step">
+        <div class="step-box">
+          <div class="step-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+          </div>
+          <div class="step-num">01</div>
+          <div class="step-text">{{ i18n "home.steps.step1" }}</div>
+        </div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <div class="step-box">
+          <div class="step-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10v3"/><path d="M6 6v11"/><path d="M10 3v18"/><path d="M14 8v7"/><path d="M18 5v13"/><path d="M22 10v3"/></svg>
+          </div>
+          <div class="step-num">02</div>
+          <div class="step-text">{{ i18n "home.steps.step2" }}</div>
+        </div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <div class="step-box">
+          <div class="step-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+          </div>
+          <div class="step-num">03</div>
+          <div class="step-text">{{ i18n "home.steps.step3" }}</div>
+        </div>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <div class="step-box">
+          <div class="step-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+          </div>
+          <div class="step-num">04</div>
+          <div class="step-text">{{ i18n "home.steps.step4" }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF TEASER -->
+<section class="section">
+  <div class="container">
+    <div class="proof-teaser">
+      <div class="proof-teaser-text">
+        <p class="eyebrow eyebrow-accent">{{ i18n "home.proof_teaser.eyebrow" }}</p>
+        <h2 class="section-title">{{ i18n "home.proof_teaser.title" | safeHTML }}</h2>
+        <p class="body-text" style="color:var(--color-text-secondary);margin-top:12px;max-width:480px;">
+          {{ i18n "home.proof_teaser.body" }}
+        </p>
+        <a href="{{ "/privacy/" | relLangURL }}" class="btn btn-ghost" style="margin-top:24px;">{{ i18n "button.see_proof" }}</a>
+      </div>
+      <div class="proof-teaser-image">
+        <img src="/img/wireshark-zero-network.png" alt="Wireshark capture: 0 external connections">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section cta-section">
+  <div class="container">
+    <p class="eyebrow eyebrow-accent" style="text-align:center;">{{ i18n "home.cta.eyebrow" }}</p>
+    <h2 class="section-title">{{ i18n "home.cta.title" }}</h2>
+    <p style="color:var(--color-text-secondary);margin:12px 0 32px;">{{ i18n "home.cta.body" }}</p>
+    <div class="hero-actions">
+      <a href="{{ "/download/" | relLangURL }}" class="btn btn-primary btn-large">{{ i18n "button.download_windows" }}</a>
+      <a href="{{ "/compare/" | relLangURL }}" class="btn btn-secondary btn-large">{{ i18n "button.see_compare" }}</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

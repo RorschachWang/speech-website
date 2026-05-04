@@ -1,0 +1,47 @@
+baseURL = "/"
+defaultContentLanguage = "en"
+title = "OFFTYPE"
+disableHugoGeneratorInject = true
+
+[languages]
+  [languages.en]
+    label = "English"
+    locale = "en"
+    contentDir = "content/en"
+    weight = 1
+
+  [languages.zh]
+    label = "简体中文"
+    locale = "zh"
+    contentDir = "content/zh"
+    weight = 2
+
+  [languages.ja]
+    label = "日本語"
+    locale = "ja"
+    contentDir = "content/ja"
+    weight = 3
+
+  [languages.ko]
+    label = "한국어"
+    locale = "ko"
+    contentDir = "content/ko"
+    weight = 4
+
+  [languages.fr]
+    label = "Français"
+    locale = "fr"
+    contentDir = "content/fr"
+    weight = 5
+
+  [languages.de]
+    label = "Deutsch"
+    locale = "de"
+    contentDir = "content/de"
+    weight = 6
+
+  [languages.es]
+    label = "Español"
+    locale = "es"
+    contentDir = "content/es"
+    weight = 7

@@ -1,0 +1,32 @@
+# OFFTYPE Website — Spanish (Español)
+
+# 1. Site metadata (SEO)
+[meta]
+site_title = "OFFTYPE"
+
+[meta.home]
+title = "OFFTYPE — Tu voz. Se queda local."
+
+[meta.compare]
+title = "Comparar"
+
+[meta.privacy]
+title = "Privacidad"
+
+[meta.download]
+title = "Descargar"
+
+[meta.privacy_policy]
+title = "Política de Privacidad"
+
+[meta.docs]
+title = "Documentación"
+
+# 2. Navigation bar
+[nav]
+
+[nav.link]
+compare = "Comparar"
+privacy = "Privacidad"
+docs = "Documentación"
+download = "Descargar"

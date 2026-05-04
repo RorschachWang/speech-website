@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">{{ i18n "contact.hero.eyebrow" }}</p>
+    <h1 class="page-title">{{ i18n "contact.hero.title" }}</h1>
+    <p class="page-sub">{{ i18n "contact.hero.subtitle" }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container-narrow">
+    <article class="legal-doc">
+
+      <div class="legal-summary">
+        <p>{{ i18n "contact.summary.p1" | markdownify }}</p>
+        <p style="margin-top:var(--space-2);"><strong>{{ i18n "contact.summary.response" }}</strong></p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-card">
+          <p class="contact-card-label">{{ i18n "contact.card.general_label" }}</p>
+          <a class="contact-card-email" href="mailto:hello@offtype.app">hello@offtype.app</a>
+          <p class="contact-card-note">{{ i18n "contact.card.general_note" }}</p>
+        </div>
+
+        <div class="contact-card">
+          <p class="contact-card-label">{{ i18n "contact.card.support_label" }}</p>
+          <a class="contact-card-email" href="mailto:support@offtype.app">support@offtype.app</a>
+          <p class="contact-card-note">{{ i18n "contact.card.support_note" }}</p>
+        </div>
+
+        <div class="contact-card">
+          <p class="contact-card-label">{{ i18n "contact.card.privacy_label" }}</p>
+          <a class="contact-card-email" href="mailto:privacy@offtype.app">privacy@offtype.app</a>
+          <p class="contact-card-note">{{ i18n "contact.card.privacy_note" | markdownify }}</p>
+        </div>
+
+        <div class="contact-card">
+          <p class="contact-card-label">{{ i18n "contact.card.refund_label" }}</p>
+          <a class="contact-card-email" href="mailto:refund@offtype.app">refund@offtype.app</a>
+          <p class="contact-card-note">{{ i18n "contact.card.refund_note" | markdownify }}</p>
+        </div>
+
+      </div>
+
+      <h2 class="heading-2">{{ i18n "contact.before.title" }}</h2>
+      <p>{{ i18n "contact.before.body" | markdownify }}</p>
+
+      <h2 class="heading-2">{{ i18n "contact.security.title" }}</h2>
+      <p>{{ i18n "contact.security.body" | markdownify }}</p>
+
+      <div class="legal-footer-note">
+        <p>{{ i18n "contact.footer_note.body" }}</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,32 @@
+# OFFTYPE Website — 한국어 (Korean)
+
+# 1. Site metadata (SEO)
+[meta]
+site_title = "OFFTYPE"
+
+[meta.home]
+title = "OFFTYPE — 당신의 목소리, 로컬에 머무릅니다."
+
+[meta.compare]
+title = "비교"
+
+[meta.privacy]
+title = "개인정보 보호"
+
+[meta.download]
+title = "다운로드"
+
+[meta.privacy_policy]
+title = "개인정보 처리방침"
+
+[meta.docs]
+title = "문서"
+
+# 2. Navigation bar
+[nav]
+
+[nav.link]
+compare = "비교"
+privacy = "개인정보"
+docs = "문서"
+download = "다운로드"

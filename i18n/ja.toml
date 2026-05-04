@@ -1,0 +1,33 @@
+# OFFTYPE Website — Japanese (日本語)
+# Translated from en.toml
+
+# 1. Site metadata (SEO)
+[meta]
+site_title = "OFFTYPE"
+
+[meta.home]
+title = "OFFTYPE — あなたの声は、デバイスの中に。"
+
+[meta.compare]
+title = "比較"
+
+[meta.privacy]
+title = "プライバシー"
+
+[meta.download]
+title = "ダウンロード"
+
+[meta.privacy_policy]
+title = "プライバシーポリシー"
+
+[meta.docs]
+title = "ドキュメント"
+
+# 2. Navigation bar
+[nav]
+
+[nav.link]
+compare = "比較"
+privacy = "プライバシー"
+docs = "ドキュメント"
+download = "ダウンロード"

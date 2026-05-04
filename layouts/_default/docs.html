@@ -1,0 +1,308 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">{{ i18n "docs.hero.eyebrow" }}</p>
+    <h1 class="page-title">{{ i18n "docs.hero.title" }}</h1>
+    <p class="page-sub">{{ i18n "docs.hero.subtitle" }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container-narrow">
+    <article class="docs-doc">
+
+      <!-- TOC -->
+      <div class="docs-toc">
+        <p class="eyebrow">{{ i18n "docs.toc.label" }}</p>
+        <ul class="toc-list">
+          <li><a href="#what-is">{{ i18n "docs.toc.whatis" }}</a></li>
+          <li><a href="#requirements">{{ i18n "docs.toc.requirements" }}</a></li>
+          <li><a href="#install">{{ i18n "docs.toc.install" }}</a></li>
+          <li><a href="#first-launch">{{ i18n "docs.toc.firstlaunch" }}</a></li>
+          <li><a href="#usage">{{ i18n "docs.toc.usage" }}</a></li>
+          <li><a href="#settings-panel">{{ i18n "docs.toc.settings" }}</a></li>
+          <li><a href="#preferences">{{ i18n "docs.toc.preferences" }}</a></li>
+          <li><a href="#tray">{{ i18n "docs.toc.tray" }}</a></li>
+          <li><a href="#troubleshooting">{{ i18n "docs.toc.troubleshooting" }}</a></li>
+          <li><a href="#faq">{{ i18n "docs.toc.faq" }}</a></li>
+          <li><a href="#support">{{ i18n "docs.toc.support" }}</a></li>
+        </ul>
+      </div>
+
+      <!-- WHAT IS -->
+      <h2 class="heading-2" id="what-is">{{ i18n "docs.whatis.title" }}</h2>
+      <p>{{ i18n "docs.whatis.body" | markdownify }}</p>
+      <ul>
+        <li>{{ i18n "docs.whatis.features.input" | markdownify }}</li>
+        <li>{{ i18n "docs.whatis.features.translate" | markdownify }}</li>
+        <li>{{ i18n "docs.whatis.features.polish" | markdownify }}</li>
+        <li>{{ i18n "docs.whatis.features.dictionary" | markdownify }}</li>
+      </ul>
+
+      <!-- SYSTEM REQUIREMENTS -->
+      <h2 class="heading-2" id="requirements">{{ i18n "docs.requirements.title" }}</h2>
+      <table class="docs-table">
+        <thead>
+          <tr>
+            <th>{{ i18n "docs.requirements.table.item" }}</th>
+            <th>{{ i18n "docs.requirements.table.minimum" }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ i18n "docs.requirements.row1.item" }}</td>
+            <td>{{ i18n "docs.requirements.row1.value" }}</td>
+          </tr>
+          <tr>
+            <td>{{ i18n "docs.requirements.row2.item" }}</td>
+            <td>{{ i18n "docs.requirements.row2.value" }}</td>
+          </tr>
+          <tr>
+            <td>{{ i18n "docs.requirements.row3.item" }}</td>
+            <td>{{ i18n "docs.requirements.row3.value" }}</td>
+          </tr>
+          <tr>
+            <td>{{ i18n "docs.requirements.row4.item" }}</td>
+            <td>{{ i18n "docs.requirements.row4.value" }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- INSTALLATION -->
+      <h2 class="heading-2" id="install">{{ i18n "docs.install.title" }}</h2>
+      <ol class="docs-steps">
+        <li><p>{{ i18n "docs.install.step1" | markdownify }}</p></li>
+        <li><p>{{ i18n "docs.install.step2" | markdownify }}</p></li>
+        <li><p>{{ i18n "docs.install.step3" | markdownify }}</p></li>
+      </ol>
+
+      <h3 class="heading-3">{{ i18n "docs.install.security.title" }}</h3>
+      <p>{{ i18n "docs.install.security.body" | markdownify }}</p>
+      <p>{{ i18n "docs.install.security.blocked" | markdownify }}</p>
+      <ol>
+        <li>{{ i18n "docs.install.security.step1" }}</li>
+        <li>{{ i18n "docs.install.security.step2" }}</li>
+        <li>{{ i18n "docs.install.security.step3" }}</li>
+        <li>{{ i18n "docs.install.security.step4" | markdownify }}</li>
+        <li>{{ i18n "docs.install.security.step5" }}</li>
+      </ol>
+      <p><strong>{{ i18n "docs.install.security.skip" }}</strong> {{ i18n "docs.install.security.skip_body" | markdownify }}</p>
+      <p><strong>{{ i18n "docs.install.security.why" }}</strong> {{ i18n "docs.install.security.why_body" | markdownify }}</p>
+
+      <!-- FIRST LAUNCH -->
+      <h2 class="heading-2" id="first-launch">{{ i18n "docs.firstlaunch.title" }}</h2>
+      <p>{{ i18n "docs.firstlaunch.body" }}</p>
+
+      <h3 class="heading-3">{{ i18n "docs.firstlaunch.required.title" }}</h3>
+      <table class="docs-table">
+        <thead>
+          <tr>
+            <th>{{ i18n "docs.firstlaunch.required.table.model" }}</th>
+            <th>{{ i18n "docs.firstlaunch.required.table.size" }}</th>
+            <th>{{ i18n "docs.firstlaunch.required.table.purpose" }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ i18n "docs.firstlaunch.required.row.model" }}</td>
+            <td>{{ i18n "docs.firstlaunch.required.row.size" }}</td>
+            <td>{{ i18n "docs.firstlaunch.required.row.purpose" }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>{{ i18n "docs.firstlaunch.required.note" }}</p>
+
+      <h3 class="heading-3">{{ i18n "docs.firstlaunch.optional.title" }}</h3>
+      <table class="docs-table">
+        <thead>
+          <tr>
+            <th>{{ i18n "docs.firstlaunch.optional.table.model" }}</th>
+            <th>{{ i18n "docs.firstlaunch.optional.table.size" }}</th>
+            <th>{{ i18n "docs.firstlaunch.optional.table.purpose" }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ i18n "docs.firstlaunch.optional.row1.model" }}</td>
+            <td>{{ i18n "docs.firstlaunch.optional.row1.size" }}</td>
+            <td>{{ i18n "docs.firstlaunch.optional.row1.purpose" }}</td>
+          </tr>
+          <tr>
+            <td>{{ i18n "docs.firstlaunch.optional.row2.model" }}</td>
+            <td>{{ i18n "docs.firstlaunch.optional.row2.size" }}</td>
+            <td>{{ i18n "docs.firstlaunch.optional.row2.purpose" }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>{{ i18n "docs.firstlaunch.optional.note" | markdownify }}</p>
+
+      <!-- BASIC USAGE -->
+      <h2 class="heading-2" id="usage">{{ i18n "docs.usage.title" }}</h2>
+
+      <h3 class="heading-3">{{ i18n "docs.usage.ptt.title" }}</h3>
+      <ol>
+        <li>{{ i18n "docs.usage.ptt.step1" }}</li>
+        <li>{{ i18n "docs.usage.ptt.step2" | markdownify }}</li>
+        <li>{{ i18n "docs.usage.ptt.step3" }}</li>
+      </ol>
+      <p>{{ i18n "docs.usage.ptt.note" }}</p>
+
+      <h3 class="heading-3">{{ i18n "docs.usage.vad.title" }}</h3>
+      <ol>
+        <li>{{ i18n "docs.usage.vad.step1" | markdownify }}</li>
+        <li>{{ i18n "docs.usage.vad.step2" | markdownify }}</li>
+        <li>{{ i18n "docs.usage.vad.step3" | markdownify }}</li>
+      </ol>
+      <p>{{ i18n "docs.usage.vad.note" }}</p>
+      <p><strong>{{ i18n "docs.usage.vad.check" }}</strong> {{ i18n "docs.usage.vad.check_body" | markdownify }}</p>
+
+      <h3 class="heading-3">{{ i18n "docs.usage.modes.title" }}</h3>
+      <p>{{ i18n "docs.usage.modes.body" | markdownify }}</p>
+      <table class="docs-table">
+        <thead>
+          <tr>
+            <th>{{ i18n "docs.usage.modes.table.mode" }}</th>
+            <th>{{ i18n "docs.usage.modes.table.result" }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ i18n "docs.usage.modes.row1.mode" }}</td>
+            <td>{{ i18n "docs.usage.modes.row1.result" }}</td>
+          </tr>
+          <tr>
+            <td>{{ i18n "docs.usage.modes.row2.mode" }}</td>
+            <td>{{ i18n "docs.usage.modes.row2.result" }}</td>
+          </tr>
+          <tr>
+            <td>{{ i18n "docs.usage.modes.row3.mode" }}</td>
+            <td>{{ i18n "docs.usage.modes.row3.result" }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- SETTINGS PANEL -->
+      <h2 class="heading-2" id="settings-panel">{{ i18n "docs.settings.title" }}</h2>
+      <p>{{ i18n "docs.settings.body" | markdownify }}</p>
+      <ul class="docs-list">
+        <li>{{ i18n "docs.settings.item1" | markdownify }}</li>
+        <li>{{ i18n "docs.settings.item2" | markdownify }}</li>
+        <li>{{ i18n "docs.settings.item3" | markdownify }}</li>
+        <li>{{ i18n "docs.settings.item4" | markdownify }}</li>
+      </ul>
+
+      <!-- PREFERENCES -->
+      <h2 class="heading-2" id="preferences">{{ i18n "docs.preferences.title" }}</h2>
+      <p>{{ i18n "docs.preferences.body" }}</p>
+
+      <h3 class="heading-3">{{ i18n "docs.preferences.asr.title" }}</h3>
+      <p>{{ i18n "docs.preferences.asr.body" | markdownify }}</p>
+
+      <h3 class="heading-3">{{ i18n "docs.preferences.ollama.title" }}</h3>
+      <p>{{ i18n "docs.preferences.ollama.body" | markdownify }}</p>
+
+      <h3 class="heading-3">{{ i18n "docs.preferences.llm.title" }}</h3>
+      <p>{{ i18n "docs.preferences.llm.body" }}</p>
+
+      <h3 class="heading-3">{{ i18n "docs.preferences.dict.title" }}</h3>
+      <p>{{ i18n "docs.preferences.dict.body" }}</p>
+      <table class="docs-table">
+        <thead>
+          <tr>
+            <th>{{ i18n "docs.preferences.dict.table.spoken" }}</th>
+            <th>{{ i18n "docs.preferences.dict.table.replace" }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>{{ i18n "docs.preferences.dict.row1.spoken" }}</code></td>
+            <td><code>{{ i18n "docs.preferences.dict.row1.replace" }}</code></td>
+          </tr>
+          <tr>
+            <td><code>{{ i18n "docs.preferences.dict.row2.spoken" }}</code></td>
+            <td><code>{{ i18n "docs.preferences.dict.row2.replace" }}</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>{{ i18n "docs.preferences.dict.note" | markdownify }}</p>
+
+      <h3 class="heading-3">{{ i18n "docs.preferences.fast.title" }}</h3>
+      <p>{{ i18n "docs.preferences.fast.body" }}</p>
+
+      <!-- SYSTEM TRAY -->
+      <h2 class="heading-2" id="tray">{{ i18n "docs.tray.title" }}</h2>
+      <p>{{ i18n "docs.tray.body" }}</p>
+      <ul>
+        <li>{{ i18n "docs.tray.item1" | markdownify }}</li>
+        <li>{{ i18n "docs.tray.item2" | markdownify }}</li>
+      </ul>
+
+      <!-- TROUBLESHOOTING -->
+      <h2 class="heading-2" id="troubleshooting">{{ i18n "docs.troubleshooting.title" }}</h2>
+
+      <h3 class="heading-3">{{ i18n "docs.troubleshooting.t1.title" }}</h3>
+      <ol>
+        <li>{{ i18n "docs.troubleshooting.t1.item1" | markdownify }}</li>
+        <li>{{ i18n "docs.troubleshooting.t1.item2" }}</li>
+        <li>{{ i18n "docs.troubleshooting.t1.item3" | markdownify }}</li>
+      </ol>
+
+      <h3 class="heading-3">{{ i18n "docs.troubleshooting.t2.title" }}</h3>
+      <ul>
+        <li>{{ i18n "docs.troubleshooting.t2.item1" | markdownify }}</li>
+        <li>{{ i18n "docs.troubleshooting.t2.item2" | markdownify }}</li>
+      </ul>
+
+      <h3 class="heading-3">{{ i18n "docs.troubleshooting.t3.title" }}</h3>
+      <ol>
+        <li>{{ i18n "docs.troubleshooting.t3.item1" }}</li>
+        <li>{{ i18n "docs.troubleshooting.t3.item2" | markdownify }}</li>
+        <li>{{ i18n "docs.troubleshooting.t3.item3" | markdownify }}</li>
+      </ol>
+
+      <h3 class="heading-3">{{ i18n "docs.troubleshooting.t4.title" }}</h3>
+      <ul>
+        <li>{{ i18n "docs.troubleshooting.t4.item1" }}</li>
+        <li>{{ i18n "docs.troubleshooting.t4.item2" | markdownify }}</li>
+      </ul>
+
+      <!-- FAQ -->
+      <h2 class="heading-2" id="faq">{{ i18n "docs.faq.title" }}</h2>
+
+      <h3 class="heading-3">{{ i18n "docs.faq.q1" }}</h3>
+      <p>{{ i18n "docs.faq.a1" | markdownify }}</p>
+
+      <h3 class="heading-3">{{ i18n "docs.faq.q2" }}</h3>
+      <p>{{ i18n "docs.faq.a2" }}</p>
+
+      <h3 class="heading-3">{{ i18n "docs.faq.q3" }}</h3>
+      <p>{{ i18n "docs.faq.a3" }}</p>
+
+      <h3 class="heading-3">{{ i18n "docs.faq.q4" }}</h3>
+      <p>{{ i18n "docs.faq.a4" }}</p>
+
+      <h3 class="heading-3">{{ i18n "docs.faq.q5" }}</h3>
+      <p>{{ i18n "docs.faq.a5" }}</p>
+
+      <h3 class="heading-3">{{ i18n "docs.faq.q6" }}</h3>
+      <p>{{ i18n "docs.faq.a6" }}</p>
+
+      <!-- SUPPORT -->
+      <h2 class="heading-2" id="support">{{ i18n "docs.support.title" }}</h2>
+      <p>{{ i18n "docs.support.intro" }}</p>
+      <ul>
+        <li>{{ i18n "docs.support.item1" }}</li>
+        <li>{{ i18n "docs.support.item2" }}</li>
+        <li>{{ i18n "docs.support.item3" }}</li>
+        <li>{{ i18n "docs.support.item4" }}</li>
+      </ul>
+
+      <div class="docs-contact">
+        <p class="caption">{{ i18n "docs.contact.stuck" | markdownify }}</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+{{ end }}

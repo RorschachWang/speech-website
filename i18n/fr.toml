@@ -1,0 +1,32 @@
+# OFFTYPE Website — French (Français)
+
+# 1. Site metadata (SEO)
+[meta]
+site_title = "OFFTYPE"
+
+[meta.home]
+title = "OFFTYPE — Votre voix. Reste locale."
+
+[meta.compare]
+title = "Comparer"
+
+[meta.privacy]
+title = "Confidentialité"
+
+[meta.download]
+title = "Télécharger"
+
+[meta.privacy_policy]
+title = "Politique de confidentialité"
+
+[meta.docs]
+title = "Documentation"
+
+# 2. Navigation bar
+[nav]
+
+[nav.link]
+compare = "Comparer"
+privacy = "Confidentialité"
+docs = "Documentation"
+download = "Télécharger"

@@ -1,0 +1,79 @@
+{{ define "main" }}
+
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">{{ i18n "compare.hero.eyebrow" }}</p>
+    <h1 class="page-title">{{ i18n "compare.hero.title" }}</h1>
+    <p class="page-sub">{{ i18n "compare.hero.subtitle" }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container-wide">
+    <div class="compare-table-wrapper">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>{{ i18n "compare.table.header.feature" }}</th>
+            <th>{{ i18n "compare.table.header.cloud" }}</th>
+            <th>{{ i18n "compare.table.header.offline" }}</th>
+            <th class="highlight-col">{{ i18n "compare.table.header.offtype" }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ i18n "compare.table.row.processing_location_label" }}</td>
+            <td>{{ i18n "compare.table.row.processing_location.cloud" }}</td>
+            <td>{{ i18n "compare.table.row.processing_location.offline" }}</td>
+            <td class="highlight-col"><span class="check">{{ i18n "compare.table.row.processing_location.offtype" }}</span></td>
+          </tr>
+          <tr>
+            <td>{{ i18n "compare.table.row.local_ai" }}</td>
+            <td><span class="cross">&mdash;</span></td>
+            <td><span class="cross">&mdash;</span></td>
+            <td class="highlight-col"><span class="check">&#10003;</span></td>
+          </tr>
+          <tr>
+            <td>{{ i18n "compare.table.row.translation_label" }}</td>
+            <td><span class="check">&#10003;</span></td>
+            <td><span class="cross">&mdash;</span></td>
+            <td class="highlight-col"><span class="check">&#10003;</span></td>
+          </tr>
+          <tr>
+            <td>{{ i18n "compare.table.row.platform_label" }}</td>
+            <td>{{ i18n "compare.table.row.platform.cloud" }}</td>
+            <td>{{ i18n "compare.table.row.platform.offline" }}</td>
+            <td class="highlight-col">{{ i18n "compare.table.row.platform.offtype" }}</td>
+          </tr>
+          <tr>
+            <td>{{ i18n "compare.table.row.internet_label" }}</td>
+            <td>{{ i18n "compare.table.row.internet.cloud" }}</td>
+            <td><span class="check">{{ i18n "compare.table.row.internet.offline" }}</span></td>
+            <td class="highlight-col"><span class="check">{{ i18n "compare.table.row.internet.offtype" }}</span></td>
+          </tr>
+          <tr>
+            <td>{{ i18n "compare.table.row.price_label" }}</td>
+            <td>{{ i18n "compare.table.row.price.cloud" }}</td>
+            <td>{{ i18n "compare.table.row.price.offline" }}</td>
+            <td class="highlight-col"><span class="check">{{ i18n "compare.table.row.price.offtype" }}</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="compare-summary">
+      <h3 class="heading-3">{{ i18n "compare.summary.title" }}</h3>
+      <p class="body-text">{{ i18n "compare.summary.body" }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="container">
+    <h2 class="section-title">{{ i18n "compare.cta.title" }}</h2>
+    <p class="caption" style="margin-top:8px;margin-bottom:24px;">{{ i18n "compare.cta.body" }}</p>
+    <a href="{{ "/download/" | relLangURL }}" class="btn btn-primary btn-large">{{ i18n "button.download_windows" }}</a>
+  </div>
+</section>
+
+{{ end }}
