@@ -2,9 +2,9 @@
 
 <section class="page-hero">
   <div class="container">
-    <p class="eyebrow">Legal · Notice</p>
-    <h1 class="page-title">Open Source Notice</h1>
-    <p class="page-sub">OFFTYPE is built on the work of many open-source projects. We're grateful for all of them.</p>
+    <p class="eyebrow">{{ i18n "notice.hero.eyebrow" }}</p>
+    <h1 class="page-title">{{ i18n "notice.hero.title" }}</h1>
+    <p class="page-sub">{{ i18n "notice.hero.subtitle" }}</p>
   </div>
 </section>
 
@@ -13,13 +13,13 @@
     <article class="legal-doc">
 
       <div class="legal-summary">
-        <p>OFFTYPE includes the open-source software components listed below. Each component is used under its own license. Names, copyright notices, and links to the upstream projects are reproduced in full as required.</p>
+        <p>{{ i18n "notice.summary.body" | markdownify }}</p>
         <p style="margin-top:var(--space-2);">
-          <a href="/NOTICE.txt" class="btn btn-secondary" download>Download NOTICE.txt</a>
+          <a href="/NOTICE.txt" class="btn btn-secondary" download>{{ i18n "notice.summary.download" }}</a>
         </p>
       </div>
 
-      <h2 class="heading-2">Core dependencies</h2>
+      <h2 class="heading-2">{{ i18n "notice.section_core.title" }}</h2>
       <div class="notice-grid">
 
         <div class="notice-card">
@@ -92,7 +92,7 @@
 
       </div>
 
-      <h2 class="heading-2">AI models</h2>
+      <h2 class="heading-2">{{ i18n "notice.section_models.title" }}</h2>
       <div class="notice-grid">
 
         <div class="notice-card">
@@ -124,7 +124,7 @@
 
       </div>
 
-      <h2 class="heading-2">Bundled inference engine</h2>
+      <h2 class="heading-2">{{ i18n "notice.section_engine.title" }}</h2>
       <div class="notice-grid">
 
         <div class="notice-card">
@@ -144,7 +144,7 @@
 
       </div>
 
-      <h2 class="heading-2">.NET runtime</h2>
+      <h2 class="heading-2">{{ i18n "notice.section_runtime.title" }}</h2>
       <div class="notice-grid">
 
         <div class="notice-card">
@@ -156,8 +156,8 @@
 
       </div>
 
-      <h2 class="heading-2">Transitive Python dependencies</h2>
-      <p class="caption">Bundled by PyInstaller into the speech-server distribution.</p>
+      <h2 class="heading-2">{{ i18n "notice.section_python.title" }}</h2>
+      <p class="caption">{{ i18n "notice.section_python.caption" }}</p>
       <div class="notice-list">
         <div class="notice-row"><span class="notice-row-name">attrs v26.1.0</span><span class="notice-row-license">MIT</span><a href="https://github.com/python-attrs/attrs" target="_blank" rel="noopener">github.com/python-attrs/attrs</a></div>
         <div class="notice-row"><span class="notice-row-name">certifi</span><span class="notice-row-license">MPL 2.0</span><a href="https://github.com/certifi/python-certifi" target="_blank" rel="noopener">github.com/certifi/python-certifi</a></div>
@@ -175,7 +175,7 @@
         <div class="notice-row"><span class="notice-row-name">werkzeug</span><span class="notice-row-license">BSD-3-Clause</span><a href="https://github.com/pallets/werkzeug" target="_blank" rel="noopener">github.com/pallets/werkzeug</a></div>
       </div>
 
-      <p class="caption" style="margin-top:var(--space-4);">For OFFTYPE&apos;s own license terms, see the <a href="/license/">License page</a>.</p>
+      <p class="caption" style="margin-top:var(--space-4);">{{ i18n "notice.footer" | markdownify }}</p>
     </article>
   </div>
 </section>

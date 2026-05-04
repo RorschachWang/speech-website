@@ -2,9 +2,9 @@
 
 <section class="page-hero">
   <div class="container">
-    <p class="eyebrow">Legal · License</p>
-    <h1 class="page-title">License</h1>
-    <p class="page-sub">OFFTYPE is licensed under the Apache License, Version 2.0.</p>
+    <p class="eyebrow">{{ i18n "license.hero.eyebrow" }}</p>
+    <h1 class="page-title">{{ i18n "license.hero.title" }}</h1>
+    <p class="page-sub">{{ i18n "license.hero.subtitle" }}</p>
   </div>
 </section>
 
@@ -13,21 +13,21 @@
     <article class="legal-doc">
 
       <div class="legal-summary">
-        <h2 class="heading-2">Summary in plain English</h2>
+        <h2 class="heading-2">{{ i18n "license.summary.title" }}</h2>
         <ul class="legal-list">
-          <li>You can use OFFTYPE freely, including in commercial settings.</li>
-          <li>You can modify and redistribute it, as long as you preserve the license and notices.</li>
-          <li>OFFTYPE is provided &quot;as is&quot;, without warranty.</li>
-          <li>You cannot use the OFFTYPE name or logo to endorse derivative products without permission.</li>
+          <li>{{ i18n "license.summary.item1" }}</li>
+          <li>{{ i18n "license.summary.item2" }}</li>
+          <li>{{ i18n "license.summary.item3" }}</li>
+          <li>{{ i18n "license.summary.item4" }}</li>
         </ul>
-        <p class="caption">This summary is informational and does not replace the License text below.</p>
+        <p class="caption">{{ i18n "license.summary.caption" }}</p>
         <p style="margin-top:var(--space-2);">
-          <a href="/LICENSE.txt" class="btn btn-secondary" download>Download LICENSE.txt</a>
+          <a href="/LICENSE.txt" class="btn btn-secondary" download>{{ i18n "license.summary.download" }}</a>
         </p>
       </div>
 
-      <h2 class="heading-2">Apache License, Version 2.0</h2>
-      <p class="caption">Copyright 2026 OFFTYPE Contributors</p>
+      <h2 class="heading-2">{{ i18n "license.full.title" }}</h2>
+      <p class="caption">{{ i18n "license.full.copyright" }}</p>
       <pre class="legal-text">                                 Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -205,7 +205,7 @@
 
    END OF TERMS AND CONDITIONS</pre>
 
-      <p class="caption" style="margin-top:var(--space-3);">For attributions of third-party software included with OFFTYPE, see the <a href="/notice/">Notice page</a>.</p>
+      <p class="caption" style="margin-top:var(--space-3);">{{ i18n "license.footer" | markdownify }}</p>
     </article>
   </div>
 </section>

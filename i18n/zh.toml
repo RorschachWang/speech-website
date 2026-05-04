@@ -768,17 +768,54 @@ label = "Español"
 
 coming_soon = "即将推出"
 
-# 15. License & Notice pages (English only — not translated)
+# 15. License & Notice pages
 [license]
 [license.hero]
-eyebrow = "法律 · 许可证"
-title = "许可证"
-subtitle = "Apache License 2.0"
+eyebrow = "法律 · 许可"
+title = "许可协议"
+subtitle = "OFFTYPE 采用 Apache License, Version 2.0 许可。"
 
-body = "OFFTYPE 基于 Apache License, Version 2.0 许可。"
+[license.summary]
+title = "通俗摘要"
+item1 = "你可以自由使用 OFFTYPE，包括商业用途。"
+item2 = "你可以修改和再分发，但必须保留许可证和声明。"
+item3 = "OFFTYPE 按「原样」提供，不提供任何担保。"
+item4 = "未经同意，不得使用 OFFTYPE 的名称或徽标为衍生产品背书。"
+caption = "本摘要仅供参考，不替代下方的许可协议正文。"
+download = "下载 LICENSE.txt"
+
+[license.full]
+title = "Apache License, Version 2.0"
+copyright = "版权所有 2026 OFFTYPE 贡献者"
+
+[license.footer]
+text = "OFFTYPE 所包含第三方软件的归属信息，请参见[声明页面](/notice/)。"
 
 [notice]
 [notice.hero]
 eyebrow = "法律 · 声明"
-title = "第三方声明"
-subtitle = "OFFTYPE 中集成的开源组件。"
+title = "开源声明"
+subtitle = "OFFTYPE 建立在众多开源项目的基础之上。我们对此深表感谢。"
+
+[notice.summary]
+body = "OFFTYPE 包含以下列出的开源软件组件。每个组件均按其自身许可使用。名称、版权声明和上游项目链接均按要求完整列出。"
+download = "下载 NOTICE.txt"
+
+[notice.section_core]
+title = "核心依赖"
+
+[notice.section_models]
+title = "AI 模型"
+
+[notice.section_engine]
+title = "捆绑推理引擎"
+
+[notice.section_runtime]
+title = ".NET 运行时"
+
+[notice.section_python]
+title = "传递性 Python 依赖"
+caption = "由 PyInstaller 打包至 speech-server 分发版中。"
+
+[notice.footer]
+text = "OFFTYPE 自身的许可条款，请参见[许可页面](/license/)。"

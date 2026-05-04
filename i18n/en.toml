@@ -768,17 +768,54 @@ label = "Español"
 
 coming_soon = "Soon"
 
-# 15. License & Notice pages (English only — not translated)
+# 15. License & Notice pages
 [license]
 [license.hero]
 eyebrow = "Legal · License"
 title = "License"
-subtitle = "Apache License 2.0"
+subtitle = "OFFTYPE is licensed under the Apache License, Version 2.0."
 
-body = "OFFTYPE is licensed under the Apache License, Version 2.0."
+[license.summary]
+title = "Summary in plain English"
+item1 = "You can use OFFTYPE freely, including in commercial settings."
+item2 = "You can modify and redistribute it, as long as you preserve the license and notices."
+item3 = "OFFTYPE is provided \"as is\", without warranty."
+item4 = "You cannot use the OFFTYPE name or logo to endorse derivative products without permission."
+caption = "This summary is informational and does not replace the License text below."
+download = "Download LICENSE.txt"
+
+[license.full]
+title = "Apache License, Version 2.0"
+copyright = "Copyright 2026 OFFTYPE Contributors"
+
+[license.footer]
+text = "For attributions of third-party software included with OFFTYPE, see the [Notice page](/notice/)."
 
 [notice]
 [notice.hero]
 eyebrow = "Legal · Notice"
-title = "Third-Party Notices"
-subtitle = "Open source components bundled with OFFTYPE."
+title = "Open Source Notice"
+subtitle = "OFFTYPE is built on the work of many open-source projects. We're grateful for all of them."
+
+[notice.summary]
+body = "OFFTYPE includes the open-source software components listed below. Each component is used under its own license. Names, copyright notices, and links to the upstream projects are reproduced in full as required."
+download = "Download NOTICE.txt"
+
+[notice.section_core]
+title = "Core dependencies"
+
+[notice.section_models]
+title = "AI models"
+
+[notice.section_engine]
+title = "Bundled inference engine"
+
+[notice.section_runtime]
+title = ".NET runtime"
+
+[notice.section_python]
+title = "Transitive Python dependencies"
+caption = "Bundled by PyInstaller into the speech-server distribution."
+
+[notice.footer]
+text = "For OFFTYPE's own license terms, see the [License page](/license/)."
