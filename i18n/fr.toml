@@ -155,8 +155,8 @@ offtype = "Non"
 
 [compare.table.row.price]
 cloud = "Abonnement"
-offline = "Paiement unique"
-offtype = "Paiement unique"
+offline = "Unique paiement"
+offtype = "Unique paiement"
 
 [compare.summary]
 title = "Ce que cela signifie"
@@ -277,11 +277,11 @@ item3 = "Documents ou fenêtres que vous utilisez avec l'application"
 item4 = "Noms, e-mails ou informations de compte (il n'y a pas de comptes)"
 item5 = "Adresses IP, identifiants d'appareil ou métadonnées système"
 item6 = "Rapports de plantage, télémétrie ou analyses d'utilisation"
-item7 = "Il n'y a pas de compte. Il n'y a pas de service d'analyse."
+item7 = "Il n'y a pas de compte utilisateur ni aucun service d'analyse."
 
 [privacy_policy.section2]
 title = "Activité réseau"
-intro = "OFFTYPE ne se connecte à Internet que dans deux situations :"
+intro = "OFFTYPE se connecte à Internet dans deux situations seulement :"
 p1 = "**1. Téléchargements de modèles** — Lorsque vous installez ou mettez à jour un modèle IA, des fichiers sont téléchargés depuis [Hugging Face](https://huggingface.co/privacy) ou [ModelScope](https://www.modelscope.cn/privacy). Ces services peuvent enregistrer des métadonnées HTTP standards (IP, user agent) conformément à leurs propres politiques. Nous ne recevons pas ces données. Vous pouvez ignorer les modèles optionnels ; seul le modèle ASR par défaut est téléchargé automatiquement au premier lancement."
 p2 = "**2. Vérifications de mise à jour** — L'application peut vérifier [GitHub Releases](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement) pour les nouvelles versions. Cela envoie une requête minimale directe à GitHub ; nous ne la recevons ni ne l'enregistrons. Vous pouvez désactiver cela dans les paramètres."
 p3 = "La reconnaissance vocale, la ponctuation, la traduction et l'injection de texte se déroulent entièrement sur votre appareil sans aucune requête réseau."
@@ -454,7 +454,7 @@ step5 = "Confirmez"
 skip = "Que se passe-t-il si je saute cette étape ?"
 skip_body = "La traduction et le polissage ne fonctionneront pas. La saisie vocale (ASR) n'est pas affectée. C'est votre choix."
 why = "Pourquoi cela n'est-il pas fait automatiquement ?"
-why_body = "Les modifications des paramètres de sécurité du système représentent un changement important sur votre ordinateur. OFFTYPE ne prendra pas cette décision à votre place."
+why_body = "Les modifications de la configuration de sécurité du système représentent un changement important sur votre ordinateur. OFFTYPE ne prendra pas cette décision à votre place."
 
 [docs.firstlaunch]
 title = "Premier lancement"
@@ -675,7 +675,7 @@ title = "Dépannage"
 
 [docs.troubleshooting.hotkey]
 title = "Le raccourci clavier ne fait rien"
-item1 = "Vérifiez que l'icône de la barre des tâches est verte (active). Clic droit → Redémarrer le serveur si elle est rouge."
+item1 = "Vérifiez que l'icône de la zone de notification est verte (active). Cliquez avec le bouton droit → Redémarrez le serveur s'il est rouge."
 item2 = "Une autre application peut capturer `Ctrl`+`Espace`. Changez le raccourci clavier dans les paramètres."
 
 [docs.troubleshooting.mic]
@@ -796,27 +796,27 @@ text = "Pour les attributions des logiciels tiers inclus avec OFFTYPE, voir la [
 [notice.hero]
 eyebrow = "Légal · Mentions"
 title = "Mentions open source"
-subtitle = "OFFTYPE est construit sur le travail de nombreux projets open source. Nous leur sommes tous reconnaissants."
+subtitle = "OFFTYPE est construit sur le travail de nombreux projets open source. Nous sommes reconnaissants envers tous."
 
 [notice.summary]
-body = "OFFTYPE inclut les composants logiciels open source listés ci-dessous. Chaque composant est utilisé sous sa propre licence. Les noms, les mentions de droits d'auteur et les liens vers les projets en amont sont reproduits en entier comme requis."
-download = "Télécharger NOTICE.txt"
+body = "OFFTYPE inclut les composants logiciels open source listés ci-dessous, chacun utilisé sous sa propre licence. Les noms, les mentions de droits d'auteur et les liens vers les projets en amont sont reproduits en entier comme requis."
+download = "Télécharger le fichier NOTICE.txt"
 
 [notice.section_core]
 title = "Dépendances principales"
 
 [notice.section_models]
-title = "Modèles IA"
+title = "Modèles AI"
 
 [notice.section_engine]
-title = "Moteur d'inférence intégré"
+title = "Moteur d'inférence regroupé"
 
 [notice.section_runtime]
-title = ".NET runtime"
+title = "Runtime .NET"
 
 [notice.section_python]
 title = "Dépendances Python transitoires"
 caption = "Regroupées par PyInstaller dans la distribution du serveur de parole."
 
 [notice.footer]
-text = "Pour les conditions de licence d'OFFTYPE lui-même, voir la [page Licence](/license/)."
+text = "Pour les conditions de licence d'OFFTYPE, consultez la page [Licence](/license/)."
