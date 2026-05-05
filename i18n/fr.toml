@@ -249,6 +249,9 @@ desc = "LLM local pour la correction de ponctuation, la traduction et le polissa
 [download.changelog]
 title = "Nouveautés"
 
+[download.changelog.v1_0_1]
+desc = "Fixed VAD continuous mode crash, VADIterator compatibility, and added log rotation."
+
 [download.changelog.v1_0_0]
 desc = "Version initiale. Saisie vocale hors ligne avec traitement IA local, traduction en temps réel et prise en charge des dialectes."
 

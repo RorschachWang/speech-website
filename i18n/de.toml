@@ -251,6 +251,9 @@ desc = "Lokales LLM fuer Zeichensetzungskorrektur, Uebersetzung und Textoptimier
 [download.changelog]
 title = "Neuigkeiten"
 
+[download.changelog.v1_0_1]
+desc = "Fixed VAD continuous mode crash, VADIterator compatibility, and added log rotation."
+
 [download.changelog.v1_0_0]
 desc = "Erstveroeffentlichung. Offline-Spracheingabe mit lokaler KI-Verarbeitung, Echtzeit-Uebersetzung und Dialektunterstuetzung."
 

@@ -249,6 +249,9 @@ desc = "Local LLM for punctuation correction, translation, and text polishing. R
 [download.changelog]
 title = "What's new"
 
+[download.changelog.v1_0_1]
+desc = "Fixed VAD continuous mode crash, VADIterator compatibility, and added log rotation."
+
 [download.changelog.v1_0_0]
 desc = "Initial release. Offline voice input with local AI processing, real-time translation, and dialect support."
 

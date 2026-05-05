@@ -249,6 +249,9 @@ desc = "本地大语言模型，用于标点纠错、翻译和文字润色。无
 [download.changelog]
 title = "更新日志"
 
+[download.changelog.v1_0_1]
+desc = "修复 VAD 持续监听模式崩溃、VADIterator 兼容性问题，新增日志轮转。"
+
 [download.changelog.v1_0_0]
 desc = "初始版本。离线语音输入，本地 AI 处理，实时翻译，方言支持。"
 

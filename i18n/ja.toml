@@ -250,6 +250,9 @@ desc = "句読点修正、翻訳、文章の磨き上げのためのローカル
 [download.changelog]
 title = "新着情報"
 
+[download.changelog.v1_0_1]
+desc = "Fixed VAD continuous mode crash, VADIterator compatibility, and added log rotation."
+
 [download.changelog.v1_0_0]
 desc = "初回リリース。ローカルAI処理、リアルタイム翻訳、方言サポートを備えたオフライン音声入力。"
 

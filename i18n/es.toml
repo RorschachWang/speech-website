@@ -250,6 +250,9 @@ desc = "LLM local para corrección de puntuación, traducción y pulido de texto
 [download.changelog]
 title = "Novedades"
 
+[download.changelog.v1_0_1]
+desc = "Fixed VAD continuous mode crash, VADIterator compatibility, and added log rotation."
+
 [download.changelog.v1_0_0]
 desc = "Lanzamiento inicial. Entrada de voz sin conexión con procesamiento de IA local, traducción en tiempo real y soporte de dialectos."
 

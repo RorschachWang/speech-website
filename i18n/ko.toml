@@ -251,6 +251,9 @@ desc = "문장 부호 교정, 번역, 텍스트 다듬기를 위한 로컬 LLM. 
 [download.changelog]
 title = "새로운 기능"
 
+[download.changelog.v1_0_1]
+desc = "Fixed VAD continuous mode crash, VADIterator compatibility, and added log rotation."
+
 [download.changelog.v1_0_0]
 desc = "최초 릴리스. 로컬 AI 처리, 실시간 번역, 방언 지원을 갖춘 오프라인 음성 입력."
 
