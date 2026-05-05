@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "models": {
+    "sense-voice": {
+      "name": "SenseVoice (Mandatory)",
+      "mandatory": true,
+      "attribution": "Alibaba Tongyi Lab · Apache 2.0",
+      "files": [
+        {
+          "path": "sense-voice/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17/model.int8.onnx",
+          "sha256": "c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51",
+          "size_bytes": 239233841,
+          "url_hf": "https://huggingface.co/csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17/resolve/main/model.int8.onnx",
+          "url_ms": "https://modelscope.cn/models/csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17/resolve/master/model.int8.onnx"
+        },
+        {
+          "path": "sense-voice/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17/tokens.txt",
+          "sha256": "f449eb28dc567533d7fa59be34e2abca8784f771850c78a47fb731a31429a1dc",
+          "size_bytes": 315894,
+          "url_hf": "https://huggingface.co/csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17/resolve/main/tokens.txt",
+          "url_ms": "https://modelscope.cn/models/csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17/resolve/master/tokens.txt"
+        }
+      ]
+    },
+    "qwen3-asr": {
+      "name": "Qwen3-ASR (Optional)",
+      "mandatory": false,
+      "attribution": "Alibaba Tongyi Lab · Apache 2.0",
+      "archive": {
+        "format": "tar.bz2",
+        "url_gh": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25.tar.bz2",
+        "url_ghproxy": "https://ghproxy.net/https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-qwen3-asr-0.6B-int8-2026-03-25.tar.bz2"
+      },
+      "files": [
+        {
+          "path": "qwen3-asr/conv_frontend.onnx",
+          "sha256": "d22dc4423e0940e49884e903d2ea2f7e5567c14fc1aed97e4e26d6b8f208ef9e",
+          "size_bytes": 44148281
+        },
+        {
+          "path": "qwen3-asr/encoder.int8.onnx",
+          "sha256": "60748d3e6744a57c9c91e1b17424a6c2990567e8adceb0783940c03ed98fa9d9",
+          "size_bytes": 182491662
+        },
+        {
+          "path": "qwen3-asr/decoder.int8.onnx",
+          "sha256": "4f6885be5959ae26af3089d38ee7972c5fafbeeb1cf8d5e76eab6d8b61ca5771",
+          "size_bytes": 755914231
+        },
+        {
+          "path": "qwen3-asr/tokenizer/tokenizer_config.json",
+          "sha256": "4942d005604266809309cabc9f4e9cb89ce855d59b14681fdc0e1cc62ea26c4c",
+          "size_bytes": 12487
+        },
+        {
+          "path": "qwen3-asr/tokenizer/vocab.json",
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "size_bytes": 2776833
+        },
+        {
+          "path": "qwen3-asr/tokenizer/merges.txt",
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+          "size_bytes": 1671853
+        }
+      ]
+    },
+    "llm": {
+      "name": "Local LLM (Recommended)",
+      "mandatory": false,
+      "attribution": "Qwen Team · Apache 2.0",
+      "files": [
+        {
+          "path": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+          "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+          "size_bytes": 1117320736,
+          "url_hf": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/main/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+          "url_ms": "https://modelscope.cn/models/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/master/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+        }
+      ]
+    }
+  }
+}

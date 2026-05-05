@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://offtype.app"
 defaultContentLanguage = "en"
 title = "OFFTYPE"
 disableHugoGeneratorInject = true
