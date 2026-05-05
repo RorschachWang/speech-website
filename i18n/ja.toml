@@ -207,7 +207,7 @@ body = "オプトインはありません。追跡はありません。クラウ
 # 8. DOWNLOAD page
 [download]
 [download.hero]
-eyebrow = "ダウンロード · v1.0.0"
+eyebrow = "ダウンロード · v1.0.1"
 title = "Windows版OFFTYPEを入手"
 subtitle = "Windows 10以降、64ビットシステム向け。"
 size_note = "~200 MBインストーラー · モデルは初回実行時にダウンロードされます"

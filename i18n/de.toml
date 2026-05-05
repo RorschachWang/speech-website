@@ -208,7 +208,7 @@ body = "Es gibt kein Opt-in. Es gibt kein Tracking. Es gibt keine Cloud."
 # 8. DOWNLOAD page
 [download]
 [download.hero]
-eyebrow = "Download · v1.0.0"
+eyebrow = "Download · v1.0.1"
 title = "OFFTYPE fuer Windows herunterladen"
 subtitle = "Fuer Windows 10 oder neuer, 64-Bit-Systeme."
 size_note = "~200 MB Installer · Modelle werden beim ersten Start heruntergeladen"

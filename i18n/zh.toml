@@ -206,7 +206,7 @@ body = "没有开关。没有追踪。没有云端。"
 # 8. DOWNLOAD page
 [download]
 [download.hero]
-eyebrow = "下载 · v1.0.0"
+eyebrow = "下载 · v1.0.1"
 title = "获取 OFFTYPE Windows 版"
 subtitle = "适用于 Windows 10 及以上，64 位系统。"
 size_note = "约 200 MB 安装包 · 模型首次运行时下载"

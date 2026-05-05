@@ -206,7 +206,7 @@ body = "Il n'y a pas d'opt-in. Il n'y a pas de suivi. Il n'y a pas de cloud."
 # 8. DOWNLOAD page
 [download]
 [download.hero]
-eyebrow = "Télécharger · v1.0.0"
+eyebrow = "Télécharger · v1.0.1"
 title = "Obtenir OFFTYPE pour Windows"
 subtitle = "Pour Windows 10 ou ultérieur, systèmes 64 bits."
 size_note = "~200 Mo d'installateur · modèles téléchargés au premier lancement"
