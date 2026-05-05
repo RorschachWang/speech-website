@@ -206,7 +206,7 @@ body = "There is no opt-in. There is no tracking. There is no cloud."
 # 8. DOWNLOAD page
 [download]
 [download.hero]
-eyebrow = "Download · v1.0.1"
+eyebrow = "Download"
 title = "Get OFFTYPE for Windows"
 subtitle = "For Windows 10 or later, 64-bit systems."
 size_note = "~200 MB installer · models downloaded on first run"

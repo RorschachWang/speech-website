@@ -3,6 +3,9 @@ defaultContentLanguage = "en"
 title = "OFFTYPE"
 disableHugoGeneratorInject = true
 
+[params]
+  version = "1.0.1"
+
 [languages]
   [languages.en]
     label = "English"

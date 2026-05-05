@@ -2,11 +2,11 @@
 
 <section class="download-hero">
   <div class="container">
-    <p class="eyebrow">{{ i18n "download.hero.eyebrow" }}</p>
+    <p class="eyebrow">{{ i18n "download.hero.eyebrow" }} · v{{ .Site.Params.version }}</p>
     <h1 class="page-title">{{ i18n "download.hero.title" }}</h1>
     <p class="page-sub">{{ i18n "download.hero.subtitle" }}</p>
     <div class="hero-actions" style="margin-top:32px;">
-      <a href="https://github.com/RorschachWang/speech-website/releases/download/v1.0.1/OFFTYPE-Setup-1.0.1.exe" class="btn btn-primary btn-large">{{ i18n "button.download_installer" }}</a>
+      <a href="https://github.com/RorschachWang/speech-website/releases/download/v{{ .Site.Params.version }}/OFFTYPE-Setup-{{ .Site.Params.version }}.exe" class="btn btn-primary btn-large">{{ i18n "button.download_installer" }}</a>
     </div>
     <p class="download-size">{{ i18n "download.hero.size_note" }}</p>
   </div>

@@ -207,7 +207,7 @@ body = "No hay opción de activación. No hay rastreo. No hay nube."
 # 8. DOWNLOAD page
 [download]
 [download.hero]
-eyebrow = "Descargar · v1.0.1"
+eyebrow = "Descargar"
 title = "Obtén OFFTYPE para Windows"
 subtitle = "Para Windows 10 o posterior, sistemas de 64 bits."
 size_note = "Instalador de ~200 MB · modelos descargados en el primer inicio"
