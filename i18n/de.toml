@@ -1,33 +1,823 @@
+# Hinweis zu rechtlichen Dokumenten: Die folgenden rechtlichen Dokumente sind AI-Uebersetzungen. Die rechtsverbindliche Originalversion ist auf Englisch verfuegbar.
+
 # OFFTYPE Website — German (Deutsch)
-# Translation generated 2026-05-04
 
 # 1. Site metadata (SEO)
 [meta]
 site_title = "OFFTYPE"
 
 [meta.home]
-title = "OFFTYPE — Deine Stimme. Bleibt lokal."
+title = "OFFTYPE — Your Voice. Stays Local."
 
 [meta.compare]
 title = "Vergleich"
 
 [meta.privacy]
-title = "Privatsphäre"
+title = "Datenschutz"
 
 [meta.download]
 title = "Download"
 
 [meta.privacy_policy]
-title = "Datenschutzerklärung"
+title = "Datenschutzerklaerung"
 
 [meta.docs]
 title = "Dokumentation"
 
 # 2. Navigation bar
 [nav]
+lang_aria = "Sprache aendern"
+github_aria = "GitHub-Repository"
+github_title = "OFFTYPE auf GitHub"
 
 [nav.link]
 compare = "Vergleich"
-privacy = "Privatsphäre"
+privacy = "Datenschutz"
 docs = "Dokumentation"
 download = "Download"
+
+# 3. Footer
+[footer]
+[footer.column]
+product = "Produkt"
+resources = "Ressourcen"
+legal = "Rechtliches"
+
+[footer.link]
+home = "Startseite"
+compare = "Vergleich"
+privacy = "Datenschutz"
+download = "Download"
+docs = "Dokumentation"
+privacy_policy = "Datenschutzerklaerung"
+license = "Lizenz"
+notice = "Hinweis"
+contact = "Kontakt"
+refund = "Rueckgaberecht"
+support_kofi = "Auf Ko-fi unterstuetzen"
+
+copyright = "&copy; 2026 OFFTYPE. Alle Rechte vorbehalten."
+
+# 4. Common UI strings
+[button]
+download_windows = "Fuer Windows herunterladen"
+download_installer = "Installer herunterladen"
+see_compare = "Vergleich ansehen"
+see_proof = "Wireshark-Aufzeichnung ansehen"
+see_comparison = "Vergleich ansehen"
+support_development = "Entwicklung unterstuetzen"
+
+[badge]
+required = "ERFORDERLICH"
+optional = "OPTIONAL"
+
+# 5. HOME page
+[home]
+[home.hero]
+eyebrow = "OFFTYPE · Offline-Spracheingabe fuer Windows"
+title = "Your voice."
+title_accent = "Stays local."
+subtitle = "Sprich natuerlich. Deine Worte erscheinen sofort — ohne deinen Rechner zu verlassen.\nKeine Cloud. Kein Abo. Kein Tracking."
+note = "Kostenlos · ~200 MB Installer · Windows 10 oder neuer"
+
+[home.values]
+eyebrow = "Was es anders macht"
+title = "Drei Dinge, die sonst nirgends passieren."
+
+[home.values.offline]
+title = "100% Offline"
+desc = "ASR, Zeichensetzung, Uebersetzung — jeder Schritt laeuft lokal. Verifiziert durch Wireshark: keine externen Netzwerkanfragen."
+link = "Beweis ansehen →"
+
+[home.values.translate]
+title = "Echtzeit-Uebersetzung"
+desc = "Sprich Chinesisch, erhalte Englisch. Oder Japanisch, Koreanisch, Franzoesisch, Deutsch, Spanisch. Sechs Zielsprachen, alles auf dem Geraet verarbeitet."
+link = "Funktionen vergleichen →"
+
+[home.values.dialects]
+title = "52 Sprachen & Dialekte"
+desc = "Mandarin, Englisch, Kantonesisch, Sichuanesisch, Vietnamesisch, Arabisch, Hindi und viele mehr. 30 Sprachen + 22 chinesische Dialekte, alles lokal erkannt."
+link = "Alle Modelle ansehen →"
+
+[home.steps]
+eyebrow = "So funktioniert es"
+title = "Vier Schritte. Null Cloud-Hops."
+subtitle = "Vom Mikrofon zum Cursor — jedes Byte bleibt auf deinem Geraet."
+step1 = "Mikrofon"
+step2 = "Lokales ASR"
+step3 = "Lokale KI"
+step4 = "Text erscheint"
+
+[home.proof_teaser]
+eyebrow = "Beweis, nicht Versprechen"
+title = "1.683 Pakete.\n0 externe Verbindungen."
+body = "Wir haben Wireshark waehrend der Nutzung von OFFTYPE laufen lassen. Die Zahlen sind das Einzige, das zaehlt — und sie sind alle null."
+
+[home.cta]
+eyebrow = "Kostenlos testen"
+title = "Bereit, wenn du es bist."
+body = "Einmal herunterladen. Fuer immer sprechen. Deine Stimme verlaesst nie das Geraet."
+
+# 6. COMPARE page
+[compare]
+[compare.hero]
+eyebrow = "Vergleich"
+title = "Vergleich ansehen"
+subtitle = "Drei unterschiedliche Ansaetze fuer Spracheingabe. Einer bleibt auf deinem Rechner."
+
+[compare.table]
+[compare.table.header]
+feature = "Funktion"
+cloud = "Cloud-basiert"
+offline = "Offline-Transkription"
+offtype = "OFFTYPE"
+
+[compare.table.row]
+processing_location_label = "Verarbeitungsort"
+local_ai = "Lokale KI-Nachbearbeitung"
+translation_label = "In andere Sprachen uebersetzen"
+platform_label = "Plattform"
+internet_label = "Internet erforderlich"
+price_label = "Preismodell"
+
+[compare.table.row.processing_location]
+cloud = "Cloud"
+offline = "Lokal"
+offtype = "Lokal"
+
+[compare.table.row.platform]
+cloud = "Plattformuebergreifend"
+offline = "Nur Apple Silicon"
+offtype = "Windows"
+
+[compare.table.row.internet]
+cloud = "Ja"
+offline = "Nein"
+offtype = "Nein"
+
+[compare.table.row.price]
+cloud = "Abo"
+offline = "Einmalzahlung"
+offtype = "Einmalzahlung"
+
+[compare.summary]
+title = "Was das bedeutet"
+body = "Unter den verglichenen Tools behaelt OFFTYPE sowohl Transkription als auch KI-Nachbearbeitung auf dem Geraet. Cloud-basierte Tools benoetigen eine Internetverbindung. Die meisten Offline-Tools ueberspringen den Nachbearbeitungsschritt vollstaendig — OFFTYPE uebernimmt Korrektur, Uebersetzung und Optimierung lokal."
+
+[compare.cta]
+title = "Bereit zum Ausprobieren?"
+body = "Kostenlos herunterladen. Laeuft auf Windows 10 und neuer."
+
+# 7. PRIVACY page (marketing/explainer)
+[privacy]
+[privacy.hero]
+eyebrow = "Datenschutz by Design"
+title = "Keine Netzwerkanfragen.\nDeine Stimme verlaesst nie deinen Rechner."
+subtitle = "Kein Slogan. Eine ueberpruefbare Tatsache — aufgezeichnet in Wireshark."
+
+[privacy.proof]
+eyebrow = "Beweis, live aufgezeichnet"
+title = "1.683 Pakete · 0 externe Verbindungen"
+body = "Wir haben Wireshark waehrend der Nutzung von OFFTYPE fuer Spracheingabe laufen lassen. Der Filter `ip.addr != 127.0.0.1 && ip.addr != ::1` zeigt den gesamten externen Netzwerkverkehr. Das Ergebnis spricht fuer sich."
+caption = "Filter: `ip.addr != 127.0.0.1 && ip.addr != ::1` · 1.683 Pakete aufgezeichnet · 0 externe Verbindungen waehrend der Spracherkennung"
+
+[privacy.architecture]
+title = "Wie deine Daten fliessen"
+subtitle = "Vier Phasen. Alles passiert im Prozess auf deinem Geraet."
+
+[privacy.architecture.stage1]
+title = "Mikrofon nimmt Audio auf"
+body = "Audio wird vom Systemmikrofon aufgenommen und direkt an den lokalen Sprachserver gesendet. Es passiert nie eine Netzwerkschnittstelle."
+
+[privacy.architecture.stage2]
+title = "Lokales ASR-Modell wandelt Sprache in Text um"
+body = "Das ASR-Modell (SenseVoice-Small oder Qwen3-ASR) laeuft vollstaendig im Prozess. Die Audio verlaesst nie den RAM."
+
+[privacy.architecture.stage3]
+title = "Lokale KI ergaenzt Zeichensetzung und korrigiert"
+body = "Optional fuegt ein lokales 1,5-Milliarden-Parameter-Modell Zeichensetzung hinzu, uebersetzt oder schreibt den Text um — alles lokal verarbeitet."
+
+[privacy.architecture.stage4]
+title = "Text wird an deinem Cursor eingefuegt"
+body = "Der finale Text wird direkt ueber die Zwischenablage in die Zielanwendung eingefuegt. Er wird nirgendwohin gesendet."
+
+[privacy.cta]
+title = "Datenschutz ist keine Einstellung.\nEr ist die Architektur."
+body = "Es gibt kein Opt-in. Es gibt kein Tracking. Es gibt keine Cloud."
+
+# 8. DOWNLOAD page
+[download]
+[download.hero]
+eyebrow = "Download · v1.0.0"
+title = "OFFTYPE fuer Windows herunterladen"
+subtitle = "Fuer Windows 10 oder neuer, 64-Bit-Systeme."
+size_note = "~200 MB Installer · Modelle werden beim ersten Start heruntergeladen"
+
+[download.requirements]
+title = "Systemanforderungen"
+
+[download.requirements.os]
+label = "BETRIEBSSYSTEM"
+value = "Windows 10 oder neuer (64-Bit)"
+
+[download.requirements.disk]
+label = "SPEICHERPLATZ"
+value = "2 GB verfuegbarer Speicher"
+
+[download.requirements.memory]
+label = "ARBEITSSPEICHER"
+value = "8 GB RAM empfohlen"
+
+[download.requirements.mic]
+label = "MIKROFON"
+value = "Jedes standardmaessige Windows-kompatible Mikrofon"
+
+[download.models]
+title = "Modelle"
+body = "OFFTYPE laedt Modelle bei Bedarf herunter. Der Installer enthaelt den Modell-Manager — keine manuelle Einrichtung erforderlich."
+
+[download.models.sense_voice]
+name = "SenseVoice-Small"
+desc = "Standard-ASR. Unterstuetzt Mandarin, Englisch, Japanisch, Koreanisch, Kantonesisch. Sprache wird automatisch erkannt."
+
+[download.models.qwen3_asr]
+name = "Qwen3-ASR 0,6B"
+desc = "Groessere Abdeckung: 30 Sprachen + 22 chinesische Dialekte. Fuegt Sichuanesisch, Vietnamesisch, Arabisch, Hindi und viele mehr hinzu. Langsamer als SenseVoice."
+
+[download.models.qwen25]
+name = "Qwen2.5-1.5B (GGUF)"
+desc = "Lokales LLM fuer Zeichensetzungskorrektur, Uebersetzung und Textoptimierung. Laeuft ohne Internet."
+
+[download.changelog]
+title = "Neuigkeiten"
+
+[download.changelog.v1_0_0]
+desc = "Erstveroeffentlichung. Offline-Spracheingabe mit lokaler KI-Verarbeitung, Echtzeit-Uebersetzung und Dialektunterstuetzung."
+
+# 9. Support block (on Download page)
+[support]
+title = "Entwicklung unterstuetzen"
+
+[support.pay_what_you_want]
+title = "Zahle, was du moechtest"
+body = "OFFTYPE ist kostenlos, aber seine Entwicklung hat viel Kaffee gekostet. Wenn es dir Zeit spart, ueberlege dir, ein Trinkgeld zu hinterlassen."
+
+# 10. PRIVACY POLICY page (legal)
+[privacy_policy]
+[privacy_policy.hero]
+eyebrow = "Rechtliches · Datenschutzerklaerung"
+title = "Datenschutzerklaerung"
+subtitle = "Wir sammeln nichts. Diese Richtlinie erklaert im Detail, was das bedeutet."
+meta = "Gueltig ab: 03.05.2026 · Zuletzt aktualisiert: 03.05.2026"
+
+[privacy_policy.section1]
+title = "Was OFFTYPE nicht tut"
+intro = "OFFTYPE sammelt, uebertraegt oder speichert **nicht**:"
+item1 = "Sprachaufnahmen oder Mikrofoneingaben"
+item2 = "Transkribierten Text oder Tastatureingaben"
+item3 = "Dokumente oder Fenster, die du mit der App nutzt"
+item4 = "Namen, E-Mails oder Kontoinformationen (es gibt keine Konten)"
+item5 = "IP-Adressen, Geraetekennungen oder Systemmetadaten"
+item6 = "Absturzberichte, Telemetrie oder Nutzungsanalysen"
+item7 = "Es gibt kein Konto. Es gibt keinen Analysedienst."
+
+[privacy_policy.section2]
+title = "Netzwerkaktivitaet"
+intro = "OFFTYPE verbindet sich nur in zwei Situationen mit dem Internet:"
+p1 = "**1. Modell-Downloads** — Wenn du ein KI-Modell installierst oder aktualisierst, werden Dateien von [Hugging Face](https://huggingface.co/privacy) oder [ModelScope](https://www.modelscope.cn/privacy) heruntergeladen. Diese Dienste koennen standardmaessige HTTP-Metadaten (IP, User-Agent) gemaess ihren eigenen Richtlinien protokollieren. Wir erhalten diese Daten nicht. Du kannst optionale Modelle ueberspringen; nur das Standard-ASR-Modell wird beim ersten Start automatisch heruntergeladen."
+p2 = "**2. Update-Pruefungen** — Die App kann [GitHub Releases](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement) auf neue Versionen pruefen. Dies sendet eine minimale Anfrage direkt an GitHub; wir erhalten oder protokollieren sie nicht. Du kannst dies in den Einstellungen deaktivieren."
+p3 = "Spracherkennung, Zeichensetzung, Uebersetzung und Texteinfuegung passieren vollstaendig auf deinem Geraet ohne Netzwerkanfragen."
+
+[privacy_policy.section3]
+title = "Lokale Datenspeicherung"
+intro = "OFFTYPE speichert Folgendes nur auf deinem Geraet:"
+item1 = "**Konfiguration:** `%APPDATA%/OFFTYPE/config.yaml` — dein Hotkey, Modellauswahl und Einstellungen."
+item2 = "**Modelldateien:** `%APPDATA%/OFFTYPE/models/` — heruntergeladene KI-Modelle."
+item3 = "**Protokolle:** `%APPDATA%/OFFTYPE/logs/` — lokale Diagnoseprotokolle (nur auf diesem Rechner, nie uebertragen)."
+outro = "Du kannst all dies jederzeit loeschen. Die Deinstallation von OFFTYPE ueber Programme hinzufuegen oder entfernen entfernt die Anwendung; der Datenordner muss gegebenenfalls manuell geloescht werden, wenn du ihn vollstaendig entfernen moechtest."
+
+[privacy_policy.section4]
+title = "Cookies und Tracking"
+body = "OFFTYPE ist eine Desktop-App, keine Website. Sie verwendet keine Cookies oder Tracker."
+
+[privacy_policy.section5]
+title = "Drittanbieter-Komponenten"
+p1 = "OFFTYPE verwendet Open-Source-KI-Modelle und Bibliotheken. Keine von ihnen uebertraegt Daten von deinem Geraet. Siehe die [Hinweis](/notice/)-Seite fuer die vollstaendige Liste."
+p2 = "Wenn du Netzwerkfunktionen nutzt, interagierst du direkt mit [Hugging Face](https://huggingface.co/privacy), [ModelScope](https://www.modelscope.cn/privacy) und [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)."
+
+[privacy_policy.section6]
+title = "Deine Rechte"
+body = "Da wir keine personenbezogenen Daten sammeln, gibt es im Allgemeinen keine Daten, auf die zugegriffen, die korrigiert oder geloescht werden muessten. Wenn du in der EU bist, hast du Rechte gemaess der DSGVO bezueglich aller personenbezogenen Daten, die Drittanbieterdienste (Hugging Face, ModelScope, GitHub) verarbeiten koennen, wenn du Netzwerkfunktionen nutzt. Um diese Rechte auszuueben, kontaktiere diese Dienste direkt oder schreibe uns eine E-Mail und wir weisen dich in die richtige Richtung."
+
+[privacy_policy.section7]
+title = "Aenderungen dieser Richtlinie"
+body = "Wenn sich diese Richtlinie aendert, aktualisieren wir das Datum oben und veroeffentlichen einen Hinweis auf der Website. Wesentliche Aenderungen erscheinen auch in den Release Notes der App."
+
+[privacy_policy.section8]
+title = "Kontakt"
+body = "Fragen? E-Mail an [privacy@offtype.app](mailto:privacy@offtype.app)."
+
+disclaimer = "*Diese Richtlinie ist in einfachem Englisch verfasst. Sie ersetzt keine Rechtsberatung.*"
+
+# 11. REFUND page
+[refund]
+[refund.hero]
+eyebrow = "Rechtliches · Rueckgaberecht"
+title = "Rueckgaberecht"
+subtitle = "7-Tage-Geld-zurueck-Garantie. Keine Fragen gestellt."
+meta = "Gueltig ab: 04.05.2026 · Zuletzt aktualisiert: 04.05.2026"
+
+[refund.summary]
+title = "Zusammenfassung"
+body = "Wenn OFFTYPE fuer dich nicht funktioniert, schreibe uns innerhalb von 7 Tagen nach dem Kauf eine E-Mail und wir erstatten dir den vollen Betrag. Wir brauchen keinen Grund. Kostenlose Downloads sind nicht betroffen — diese Richtlinie gilt nur fuer kostenpflichtige Kaeufe."
+
+[refund.section1]
+title = "1. Berechtigung"
+body = "Wir bieten eine **7-Tage-Geld-zurueck-Garantie** fuer alle kostenpflichtigen Kaeufe von OFFTYPE. Wenn du aus irgendeinem Grund mit OFFTYPE nicht zufrieden bist, kannst du innerhalb von 7 Tagen nach deinem Kaufdatum eine vollstaendige Rueckerstattung beantragen."
+
+[refund.section2]
+title = "2. So beantragst du eine Rueckerstattung"
+body = "Sende eine E-Mail an [refund@offtype.app](mailto:refund@offtype.app) mit:"
+item1 = "Der bei dem Kauf verwendeten E-Mail-Adresse"
+item2 = "Deiner Bestell- oder Belegnummer (falls verfuegbar)"
+item3 = "Einem kurzen Grund (optional — hilft uns, uns zu verbessern)"
+outro = "Wir bearbeiten deine Rueckerstattung innerhalb von **3 Werktagen** nach Erhalt deiner Anfrage. Rueckerstattungen erfolgen auf die urspruengliche Zahlungsmethode."
+
+[refund.section3]
+title = "3. Ausnahmen"
+body = "Rueckerstattungen sind nicht verfuegbar, wenn:"
+item1 = "Mehr als 7 Tage seit dem Kaufdatum vergangen sind"
+item2 = "Der Kauf ueber einen Drittanbieter-Reseller getaetigt wurde — bitte kontaktiere den Reseller direkt"
+
+[refund.section4]
+title = "4. Rueckbuchungen"
+body = "Wenn du ein Problem mit OFFTYPE hast, kontaktiere uns bitte, bevor du eine Rueckbuchung bei deinem Zahlungsanbieter einreichst. Wir sind bestrebt, dein Problem umgehend zu loesen, und eine direkte Rueckerstattung ist schneller als ein Rueckbuchungsstreit."
+
+[refund.section5]
+title = "5. Kostenlose Downloads"
+body = "Die Basisanwendung von OFFTYPE ist kostenlos zum Download und zur Nutzung verfuegbar. Diese Rueckerstattungsrichtlinie gilt nur fuer optionale kostenpflichtige Kaeufe (z. B. Pro-Funktionen). Kostenlose Nutzer haben keinen Anspruch auf eine Rueckerstattung, da nichts bezahlt wurde."
+
+[refund.section7]
+title = "6. Kontakt"
+body = "Bei Rueckerstattungsanfragen:"
+
+disclaimer = "Diese Richtlinie ist in einfachem Englisch verfasst, um lesbar zu sein. Sie ersetzt keine Rechtsberatung. Wenn du spezifische Compliance-Fragen fuer deine Organisation hast, konsultiere einen qualifizierten Rechtsanwalt."
+
+# 12. CONTACT page
+[contact]
+[contact.hero]
+eyebrow = "Rechtliches · Kontakt"
+title = "Kontakt"
+subtitle = "Ein kleines Team, das in einer Zeitzone arbeitet. E-Mail ist der schnellste Weg, uns zu erreichen — wir lesen jede Nachricht."
+
+[contact.summary]
+p1 = "Waehle die E-Mail, die zu deinem Anliegen passt. Wenn du dir unsicher bist, nutze [hello@offtype.app](mailto:hello@offtype.app) und wir leiten sie weiter."
+response = "Antwortzeit: in der Regel innerhalb von 2 Werktagen. Rueckerstattungsanfragen werden innerhalb von 3 Werktagen nach Eingang bearbeitet."
+
+[contact.card]
+general_label = "Allgemein & Presse"
+general_email = "hello@offtype.app"
+general_note = "Alles, was nicht in die anderen Kategorien passt — Partnerschaften, Presse, Vorschlaege oder einfach nur Hallo."
+
+support_label = "Produktsupport"
+support_email = "support@offtype.app"
+support_note = "Bugs, Installationsprobleme, Fehlerbehebung, Funktionswuensche. Bitte gib deine Windows-Version und OFFTYPE-Version an."
+
+privacy_label = "Datenschutz & Daten"
+privacy_email = "privacy@offtype.app"
+privacy_note = "Fragen zu unserer [Datenschutzerklaerung](/privacy-policy/), Datenverarbeitung oder Compliance."
+
+refund_label = "Rueckerstattungen & Abrechnung"
+refund_email = "refund@offtype.app"
+refund_note = "Rueckerstattungsanfragen innerhalb von 7 Tagen nach dem Kauf. Siehe [Rueckgaberecht](/refund/)."
+
+[contact.before]
+title = "Bevor du eine E-Mail schreibst"
+body = "Wenn deine Frage zur Funktionsweise ist, deckt der [Benutzerhandbuch](/docs/) sie wahrscheinlich bereits ab — Installation, Modelle, Hotkeys, Fehlerbehebung und FAQs. Spart dir einen Hin- und Her."
+
+[contact.security]
+title = "Sicherheitsmeldungen"
+body = "Wenn du eine Sicherheitsluecke gefunden hast, schreibe bitte an [hello@offtype.app](mailto:hello@offtype.app) mit \"Security\" in der Betreffzeile und wir antworten innerhalb von 48 Stunden. Bitte reiche kein oeffentliches Issue ein, bevor wir die Chance hatten, es zu beheben."
+
+[contact.footer_note]
+body = "OFFTYPE wird als unabhaengiges Projekt betrieben. Wir haben keine Telefonleitung, Postanschrift oder Live-Chat. Per E-Mail erreichst du einen Menschen."
+
+# 13. DOCS page
+[docs]
+
+[docs.whatis]
+title = "Was ist OFFTYPE"
+body = "OFFTYPE ist ein vollstaendig offline arbeitendes Spracheingabetool. Sprich natuerlich, und deine Worte erscheinen als Text in jeder Anwendung. Kein Internet erforderlich. Deine Daten verlassen nie deinen Computer."
+
+[docs.whatis.features]
+input = "**Spracheingabe**: Sprechen → Text erscheint dort, wo du tippst"
+translate = "**Uebersetzen**: Sprich Chinesisch → Ausgabe auf Englisch, Japanisch, Koreanisch, Franzoesisch, Spanisch oder Deutsch"
+polish = "**Optimieren**: Umschreibe lockere Sprache in formelle, lockere oder vereinfachte Stile"
+dictionary = "**Benutzerwoerterbuch**: Lege fest, wie Namen, Begriffe und Abkuerzungen geschrieben werden sollen"
+
+[docs.requirements]
+title = "Systemanforderungen"
+
+[docs.requirements.table]
+item = "Komponente"
+minimum = "Minimum"
+
+[docs.requirements.row1]
+item = "Betriebssystem"
+value = "Windows 10 64-Bit oder neuer"
+
+[docs.requirements.row2]
+item = "RAM"
+value = "8 GB"
+
+[docs.requirements.row3]
+item = "Speicher"
+value = "2 GB (einschliesslich SenseVoice-Modell)"
+
+[docs.requirements.row4]
+item = "Netzwerk"
+value = "Nur fuer den ersten Modell-Download erforderlich"
+
+[docs.install]
+title = "Installation"
+step1 = "Doppelklicke auf `OFFTYPE-Setup-1.0.0.exe`"
+step2 = "Folge dem Assistenten (Installationsort waehlen, Desktop-Verknuepfung)"
+step3 = "OFFTYPE startet automatisch, wenn fertig"
+
+[docs.install.security]
+title = "Sicherheitshinweis: Windows Controlled Folder Access"
+body = "OFFTYPE bindet [llama.cpp](https://github.com/ggerganov/llama.cpp) (MIT Open-Source-Lizenz) fuer Uebersetzung und Textoptimierung auf dem Geraet ein. Die Windows-Executable fuer dieses Open-Source-Projekt heisst `llama-cli.exe`. Da sie kein kommerzielles Code-Signing-Zertifikat besitzt (200–400 $/Jahr), kann Windows-Sicherheit sie als nicht erkannte Anwendung markieren."
+blocked = "Wenn du \"Controlled folder access blocked llama-cli.exe\" siehst:"
+step1 = "Oeffne Windows-Sicherheit → Viren- & Bedrohungsschutz"
+step2 = "Unter \"Zugriff auf Ordner kontrollieren\" klicke auf \"Zugriff auf Ordner kontrollieren verwalten\""
+step3 = "Klicke auf \"Eine App ueber den kontrollierten Ordnerzugriff zulassen\" → Zulaessige App hinzufuegen"
+step4 = "Navigiere zu `C:\\Program Files\\OFFTYPE\\speech-server\\_internal\\llama-cpp\\llama-cli.exe`"
+step5 = "Bestaetigen"
+skip = "Was passiert, wenn ich dies ueberspringe?"
+skip_body = "Uebersetzung und Optimierung funktionieren nicht. Spracheingabe (ASR) ist nicht betroffen. Es ist deine Entscheidung."
+why = "Warum wird das nicht automatisch erledigt?"
+why_body = "Das Aendern von Systemsicherheitseinstellungen ist eine erhebliche Aenderung an deinem Computer. OFFTYPE trifft diese Entscheidung nicht fuer dich."
+
+[docs.firstlaunch]
+title = "Erster Start"
+body = "OFFTYPE verbindet sich beim Start mit seinem lokalen Dienst. Wenn Modelle noch nicht heruntergeladen sind, wirst du dazu aufgefordert."
+
+[docs.firstlaunch.required]
+title = "Erforderliches Modell"
+note = "Ein Download-Fenster oeffnet sich automatisch beim ersten Start."
+
+[docs.firstlaunch.required.table]
+model = "Modell"
+size = "Groesse"
+purpose = "Zweck"
+
+[docs.firstlaunch.required.row]
+model = "SenseVoice"
+size = "~239 MB"
+purpose = "Spracherkennung (verpflichtend)"
+
+[docs.firstlaunch.optional]
+title = "Optionale Modelle"
+note = "Spracheingabe funktioniert ohne das lokale LLM. Fuer Uebersetzung und Optimierung kannst du auch [Ollama](https://ollama.com) installieren und groessere Modelle nutzen."
+
+[docs.firstlaunch.optional.table]
+model = "Modell"
+size = "Groesse"
+purpose = "Zweck"
+
+[docs.firstlaunch.optional.row1]
+model = "Qwen3-ASR"
+size = "~988 MB"
+purpose = "Groessere Abdeckung: 30 Sprachen + 22 chinesische Dialekte (Kantonesisch, Sichuanesisch, Vietnamesisch, Arabisch usw.)"
+
+[docs.firstlaunch.optional.row2]
+model = "Lokales LLM (1,5B)"
+size = "~1,04 GB"
+purpose = "Uebersetzung & Optimierung auf dem Geraet. Kein Ollama erforderlich"
+
+[docs.usage]
+title = "Grundlegende Nutzung"
+
+[docs.usage.ptt]
+title = "Push to Talk (PTT)"
+step1 = "Klicke auf \"Push to Talk\""
+step2 = "Halte **Strg+Leertaste** gedrueckt und beginne zu sprechen"
+step3 = "Loslassen — Text erscheint an deinem Cursor"
+note = "Am besten fuer kurze Saetze. Dies ist der Standardmodus."
+
+[docs.usage.vad]
+title = "Voice Activity Detection (VAD)"
+step1 = "Klicke auf **...**, um das Einstellungsfeld zu erweitern"
+step2 = "Setze Ausloeser auf **VAD**"
+step3 = "Beginne zu sprechen — OFFTYPE erkennt Saetze automatisch und tippt jeden ein, wenn du pausierst"
+note = "Keine Tasten noetig. Am besten fuer laengere Diktate."
+check = "Wie erkenne ich, ob VAD funktioniert?"
+check_body = "Achte auf die Farbe des Push-to-Talk-Buttons:\n- **Pulsierendes Gruen (Atemlicht)**: Sprache erkannt, funktioniert normal\n- **Dauerhaftes Gruen, blinkt nie**: VAD-Engine laeuft, erkennt aber keine Sprache. Versuche, OFFTYPE neu zu starten. Wenn das Licht dauerhaft gruen bleibt, pruefe, ob das ASR-Modell in den Einstellungen heruntergeladen ist"
+
+[docs.usage.modes]
+title = "Modi wechseln"
+body = "Nutze das **Prozess**-Dropdown im erweiterten Panel:"
+
+[docs.usage.modes.table]
+mode = "Modus"
+result = "Ergebnis"
+
+[docs.usage.modes.row1]
+mode = "Eingabe"
+result = "Sprechen → Text (Standard)"
+
+[docs.usage.modes.row2]
+mode = "Uebersetzen"
+result = "Chinesisch sprechen → uebersetzter Text"
+
+[docs.usage.modes.row3]
+mode = "Optimieren"
+result = "Sprechen → umgeschrieben im gewaehlten Stil"
+
+[docs.settings]
+title = "Einstellungsfeld"
+body = "Klicke auf **...**, um es zu erweitern. Vier Optionen:"
+item1 = "**Ausloeser**: PTT (Push-to-Talk) oder VAD (kontinuierliches Zuhören)"
+item2 = "**Prozess**: Eingabe / Uebersetzen / Optimieren"
+item3 = "**Ziel**: Ausgabesprache (Uebersetzungsmodus)"
+item4 = "**Stil**: Optimierungsstil (Formell / Locker / Einfach)"
+
+[docs.preferences]
+title = "Einstellungen"
+body = "Klicke auf das Zahnrad-Symbol, um sie zu oeffnen."
+
+[docs.preferences.asr]
+title = "ASR-Modell"
+body = "Spracherkennungsmodell. Heruntergeladene Modelle erscheinen in der Liste; fehlende zeigen \"(Download erforderlich).\"\n- **SenseVoice**: Standard. 5 Sprachen (Chinesisch, Englisch, Japanisch, Koreanisch, Kantonesisch). Schnell.\n- **Qwen3-ASR**: 30 Sprachen + 22 chinesische Dialekte (Sichuanesisch, Vietnamesisch, Arabisch, Hindi usw.). Langsamer als SenseVoice."
+
+[docs.preferences.ollama]
+title = "Ollama"
+body = "Wenn du [Ollama](https://ollama.com) installiert hast (`ollama pull qwen2.5:7b`), aktiviere dies, um ein 7B-Modell fuer Uebersetzung und Optimierung zu nutzen. Bessere Qualitaet als das lokale 1,5B-Modell."
+
+[docs.preferences.llm]
+title = "Lokales LLM"
+body = "Qwen2.5 1,5B On-Device-Modell. Ermoeglicht Uebersetzung und Optimierung, wenn Ollama ausgeschaltet ist. Klicke auf Herunterladen, um es zu installieren."
+
+[docs.preferences.dict]
+title = "Woerterbuch"
+body = "Editor fuer benutzerdefinierte Textersetzungen. Fuege feste Begriffs-Zuordnungen hinzu:"
+note = "Das Woerterbuch ist eine einfache Textersetzung — es kann keine akzentbedingten Fehler beheben (z. B. \"four\" vs. \"for\"). Nutze Qwen3-ASR fuer Dialektprobleme."
+
+[docs.preferences.dict.table]
+spoken = "Gesprochen (ASR-Ausgabe)"
+replace = "Ersetzen durch"
+
+[docs.preferences.dict.row1]
+spoken = "off type"
+replace = "OFFTYPE"
+
+[docs.preferences.dict.row2]
+spoken = "alley baba"
+replace = "Alibaba"
+
+[docs.preferences.fast]
+title = "Schnelles Tippen"
+body = "Nutzt die eingebaute Zeichensetzung von SenseVoice und ueberspringt die LLM-Korrektur. Schneller, aber die Zeichensetzung kann weniger genau sein. Gut fuer schnelle Eingaben."
+
+[docs.tray]
+title = "System-Tray"
+body = "Fenster schliessen (X) → minimiert in den Tray. OFFTYPE laeuft weiter im Hintergrund. Doppelklicke das Tray-Symbol, um es wiederherzustellen, oder klicke mit der rechten Maustaste:"
+item1 = "**Anzeigen**: Fenster wiederherstellen"
+item2 = "**Beenden**: Vollstaendig schliessen"
+
+[docs.hero]
+eyebrow = "Dokumentation"
+title = "In 60 Sekunden einsatzbereit"
+subtitle = "Installiere OFFTYPE, druecke einen Hotkey, beginne zu sprechen. Diese Seite deckt alles Weitere ab."
+
+[docs.toc]
+label = "Auf dieser Seite"
+whatis = "Was ist OFFTYPE"
+requirements = "Systemanforderungen"
+install = "Installation"
+firstlaunch = "Erster Start"
+usage = "Grundlegende Nutzung"
+settings = "Einstellungsfeld"
+preferences = "Einstellungen"
+tray = "System-Tray"
+troubleshooting = "Fehlerbehebung"
+faq = "FAQ"
+support = "Support erhalten"
+
+[docs.quickstart]
+title = "Schnellstart"
+
+[docs.quickstart.step1]
+title = "Lade den Installer herunter."
+body = "Gehe zur [Download-Seite](/download/) und lade den Windows-Installer herunter (~200 MB)."
+
+[docs.quickstart.step2]
+title = "Fuehre den Installer aus."
+body = "Doppelklicke die `.exe`. Wenn Windows SmartScreen warnt, klicke auf \"Weitere Informationen\" → \"Trotzdem ausfuehren\". OFFTYPE wird unter `C:\\Program Files\\OFFTYPE\\` installiert."
+
+[docs.quickstart.step3]
+title = "Beim ersten Start wird das Standardmodell heruntergeladen."
+body = "OFFTYPE laedt SenseVoice-Small (~230 MB) beim ersten Start herunter. Dies ist das einzige erforderliche Modell."
+
+[docs.quickstart.step4]
+title = "Druecke Strg + Leertaste und sprich."
+body = "Halte den Hotkey gedrueckt, sprich natuerlich, lass los. Dein Text erscheint am Cursor."
+
+[docs.hotkey]
+title = "Hotkey nutzen"
+default = "Standard-Hotkey: `Strg` + `Leertaste`"
+hold = "**Halten zum Sprechen:** Hotkey gedrueckt halten, sprechen, dann loslassen. Der erkannte Text wird an deinem Cursor eingefuegt."
+toggle = "**Tippen zum Umschalten:** In den Einstellungen kannst du auf den Umschaltmodus wechseln — einmal tippen zum Starten, nochmal zum Stoppen."
+change = "**Hotkey aendern:** Tray-Symbol rechtsklicken → Einstellungen → Hotkey. Jede Kombination wird unterstuetzt."
+
+[docs.dialects]
+title = "Modelle und Sprachen wechseln"
+intro = "OFFTYPE wird mit zwei ASR-Engines ausgeliefert, umschaltbar ueber das Tray-Symbol:"
+
+[docs.dialects.table]
+engine = "Engine"
+bestfor = "Am besten fuer"
+languages = "Sprachen"
+
+[docs.dialects.table.row1]
+engine = "**SenseVoice-Small** (Standard)"
+bestfor = "Mandarin, Englisch, Japanisch, Koreanisch"
+languages = "5 Sprachen, automatisch erkannt"
+
+[docs.dialects.table.row2]
+engine = "**Qwen3-ASR**"
+bestfor = "Regionale Dialekte"
+languages = "30 Sprachen + 22 chinesische Dialekte einschliesslich Kantonesisch, Sichuanesisch, Shanghainesisch"
+outro = "Tray-Symbol rechtsklicken → ASR-Engine → auswaehlen. Das Modell laedt sofort, falls bereits heruntergeladen; andernfalls wird es automatisch heruntergeladen."
+
+[docs.translate]
+title = "Echtzeit-Uebersetzung"
+intro = "OFFTYPE kann waehrend des Sprechens uebersetzen. Sprich Chinesisch, erhalte Englisch. Sprich Englisch, erhalte Japanisch. Sechs Zielsprachen: Englisch, Japanisch, Koreanisch, Franzoesisch, Deutsch, Spanisch."
+step1 = "Oeffne Einstellungen → Uebersetzung."
+step2 = "Aktiviere Uebersetzung und waehle Zielsprache."
+step3 = "Sprich. Der uebersetzte Text erscheint an deinem Cursor."
+outro = "Uebersetzung laeuft vollstaendig auf deinem Rechner ueber das lokale LLM (Qwen2.5-1,5B). Lade es unter Einstellungen → Modelle herunter, falls noch nicht geschehen (~1,1 GB)."
+
+[docs.config]
+title = "Konfigurations- und Datenpfad"
+intro = "OFFTYPE speichert alles unter `%APPDATA%\\OFFTYPE\\`:"
+
+[docs.config.table]
+path = "Pfad"
+contains = "Inhalt"
+
+[docs.config.row]
+config = "Hotkey, Modellauswahl, Uebersetzungseinstellungen"
+models = "Heruntergeladene KI-Modelle"
+logs = "Lokale Diagnoseprotokolle (nie uebertragen)"
+outro = "Um den Konfigurationsordner schnell zu oeffnen: Tray-Symbol → Konfigurationsordner oeffnen."
+
+[docs.troubleshooting]
+title = "Fehlerbehebung"
+
+[docs.troubleshooting.hotkey]
+title = "Der Hotkey tut nichts"
+item1 = "Pruefe, ob das Tray-Symbol gruen (aktiv) ist. Rechtsklick → Server neu starten, falls es rot ist."
+item2 = "Eine andere Anwendung koennte `Strg`+`Leertaste` abfangen. Aendere den Hotkey in den Einstellungen."
+
+[docs.troubleshooting.mic]
+title = "Keine Mikrofoneingabe erkannt"
+item1 = "Oeffne Windows-Einstellungen → Datenschutz → Mikrofon und erlaube Desktop-Apps den Zugriff auf das Mikrofon."
+item2 = "Tray-Symbol rechtsklicken → Einstellungen → Audiogeraet und waehle das richtige Mikrofon aus."
+
+[docs.troubleshooting.slow]
+title = "Erkennung ist langsam"
+item1 = "Der erste Durchlauf nach dem Start ist langsamer, waehrend das Modell in den RAM geladen wird. Nachfolgende Erkennungen sind sofort."
+item2 = "Wechsle zu SenseVoice-Small (schneller), wenn du keine Dialektunterstuetzung benoetigst."
+item3 = "Deaktiviere Uebersetzung, wenn du nur Transkription benoetigst."
+
+[docs.troubleshooting.download]
+title = "Modell-Download schlaegt fehl"
+item1 = "Pruefe deine Internetverbindung. Modell-Downloads benoetigen eine einmalige Verbindung zu Hugging Face oder ModelScope."
+item2 = "Wenn Hugging Face langsam ist, wechsle in Einstellungen → Modelle → Mirror auf ModelScope."
+
+[docs.troubleshooting.t1]
+title = "Uebersetzung / Optimierung funktioniert nicht?"
+item1 = "Ist Ollama in den Einstellungen aktiviert, aber Ollama laeuft nicht? (OFFTYPE wartet auf die Verbindung und bricht ab)"
+item2 = "Ist das lokale LLM heruntergeladen?"
+item3 = "Blockiert Windows Controlled Folder Access `llama-cli.exe`? (Siehe Abschnitt Installation oben)"
+
+[docs.troubleshooting.t2]
+title = "Download ist langsam?"
+item1 = "SenseVoice laedt von HuggingFace / ModelScope herunter. In den meisten Regionen wird ModelScope automatisch ausgewaehlt."
+item2 = "Qwen3-ASR laedt von GitHub Releases herunter. OFFTYPE prueft verfuegbare Mirrors und nutzt den schnellsten."
+
+[docs.troubleshooting.t3]
+title = "Nichts passiert nach dem Start?"
+item1 = "Warte 5 Sekunden — der Server braucht Zeit zum Starten"
+item2 = "Oeffne den Task-Manager, um zu pruefen, ob `speech-server.exe` laeuft"
+item3 = "Wenn eine vorherige Version installiert war, beende alte Prozesse zuerst: `taskkill /F /IM speech-server.exe`"
+
+[docs.troubleshooting.t4]
+title = "Wie deinstalliere ich?"
+item1 = "Startmenue → Einstellungen → Apps → Installierte Apps → OFFTYPE suchen → Deinstallieren."
+item2 = "Modelldateien werden unter `%APPDATA%\\OFFTYPE\\models\\` gespeichert. Diesen Ordner musst du nach der Deinstallation manuell loeschen."
+
+[docs.faq]
+title = "FAQ"
+q1 = "Sendet OFFTYPE meine Stimme irgendwohin?"
+a1 = "Nein. Spracherkennung, Zeichensetzung und Uebersetzung passieren alle auf deinem Rechner. Siehe [Datenschutz](/privacy/) fuer den Wireshark-Beweis."
+q2 = "Funktioniert OFFTYPE offline?"
+a2 = "Ja, nach dem ersten Modell-Download. Die anschliessende Nutzung ist vollstaendig offline."
+q3 = "Kann ich es unter macOS oder Linux nutzen?"
+a3 = "Derzeit nicht. OFFTYPE ist nur fuer Windows verfuegbar. macOS und Linux sind nicht auf der unmittelbaren Roadmap."
+q4 = "Gibt es eine kostenpflichtige Version?"
+a4 = "OFFTYPE ist derzeit kostenlos. Es gibt kein Abo, kein Konto, keine Zahlung."
+q5 = "Kann ich es in einem Firmennetzwerk nutzen?"
+a5 = "Ja. OFFTYPE benoetigt nur Netzwerkzugriff fuer den ersten Modell-Download und optionale Update-Pruefungen. Danach funktioniert es vollstaendig offline. Wenn deine Firewall Hugging Face blockiert, konfiguriere den ModelScope-Mirror."
+q6 = "Wie deinstalliere ich?"
+a6 = "Windows-Einstellungen → Apps → OFFTYPE → Deinstallieren. Um alle Daten zu entfernen, loesche `%APPDATA%\\OFFTYPE\\` manuell."
+
+[docs.support]
+title = "Support erhalten"
+intro = "Wenn etwas nicht funktioniert, schreibe uns bitte eine E-Mail mit:"
+item1 = "Deiner Windows-Version"
+item2 = "OFFTYPE-Version (Tray-Symbol → Ueber)"
+item3 = "Was du versucht hast zu tun"
+item4 = "Jeder Fehlermeldung, die du siehst"
+contact = "Kontakt:"
+
+[docs.contact]
+stuck = "Immer noch nicht weiter? Schreibe an [support@offtype.app](mailto:support@offtype.app) mit deiner Windows-Version, OFFTYPE-Version, was du versucht hast zu tun und jeder Fehlermeldung. Wir lesen jede Nachricht."
+
+# 14. Language switcher labels
+[lang_switcher]
+[lang.en]
+label = "English"
+
+[lang.zh]
+label = "Jian Ti Zhong Wen "
+
+[lang.ja]
+label = "Ri Ben Yu "
+
+[lang.ko]
+label = "Han Guo Eo "
+
+[lang.fr]
+label = "Français"
+
+[lang.de]
+label = "Deutsch"
+
+[lang.es]
+label = "Español"
+
+coming_soon = "Bald verfuegbar"
+
+# 15. License & Notice pages
+[license]
+[license.hero]
+eyebrow = "Rechtliches · Lizenz"
+title = "Lizenz"
+subtitle = "OFFTYPE ist unter der Apache License, Version 2.0 lizenziert."
+
+[license.summary]
+title = "Zusammenfassung in einfachem Englisch"
+item1 = "Du kannst OFFTYPE frei nutzen, auch kommerziell."
+item2 = "Du kannst es modifizieren und weiterverteilen, solange du die Lizenz und Hinweise beibehaeltst."
+item3 = "OFFTYPE wird \"wie besehen\" bereitgestellt, ohne Gewaehrleistung."
+item4 = "Du darfst den OFFTYPE-Namen oder das Logo nicht ohne Erlaubnis zur Bewerbung abgeleiteter Produkte verwenden."
+caption = "Diese Zusammenfassung ist informativ und ersetzt nicht den Lizenztext unten."
+download = "LICENSE.txt herunterladen"
+
+[license.full]
+title = "Apache License, Version 2.0"
+copyright = "Copyright 2026 OFFTYPE Contributors"
+
+[license.footer]
+text = "Fuer die Attributionen von Drittanbieter-Software, die mit OFFTYPE enthalten ist, siehe die [Hinweis-Seite](/notice/)."
+
+[notice]
+[notice.hero]
+eyebrow = "Rechtliches · Hinweis"
+title = "Open-Source-Hinweis"
+subtitle = "OFFTYPE baut auf der Arbeit vieler Open-Source-Projekte auf. Wir sind allen dankbar."
+
+[notice.summary]
+body = "OFFTYPE enthaelt die unten aufgefuehrten Open-Source-Softwarekomponenten. Jede Komponente wird unter ihrer eigenen Lizenz genutzt. Namen, Urheberrechtshinweise und Links zu den Upstream-Projekten werden vollstaendig wie erforderlich wiedergegeben."
+download = "NOTICE.txt herunterladen"
+
+[notice.section_core]
+title = "Kernabhaengigkeiten"
+
+[notice.section_models]
+title = "KI-Modelle"
+
+[notice.section_engine]
+title = "Gebuendelte Inference-Engine"
+
+[notice.section_runtime]
+title = ".NET-Runtime"
+
+[notice.section_python]
+title = "Transitive Python-Abhaengigkeiten"
+caption = "Von PyInstaller in die Speech-Server-Distribution gebuendelt."
+
+[notice.footer]
+text = "Fuer OFFTYPEs eigene Lizenzbedingungen siehe die [Lizenz-Seite](/license/)."
